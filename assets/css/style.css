@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Saira';
+}
+
+::selection {
+    background-color: #6610f2;
+    color: #fafafa;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+button,
+input {
+    border: 0;
+    font-family: 'Saira';
+}
+
+button:focus,
+input:focus {
+    border: 0;
+}
+
+body {
+    font-family: 'Saira';
+    background-color: #fafafa;
+}
+
