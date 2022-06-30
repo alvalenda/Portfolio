@@ -73,14 +73,20 @@ header .layout-menu nav {
     flex-wrap: wrap;
     height: 8vh;
     padding: 0px 8px;
-    list-style: none;
 }
 
 header .layout-menu nav img {
     width: 150px;
 }
 
-/* Altera fonte, cor e posição da lista */
+/* torna a lista flex, podendo se organizar lado-a-lado */
+header .layout-menu nav .lista-navegacao {
+    list-style: none;
+    display: flex;
+    margin-left: 48px;
+}
+
+/* Altera fonte, cor e posição ancoradas da lista */
 header .layout-menu nav .lista-navegacao li a {
     color: #909090;
     position: relative;
@@ -161,4 +167,31 @@ header .layout-menu nav .lista-navegacao li a:hover {
     padding: 96px 48px;
     background-color: #080713;
     padding-bottom: 32px;
+}
+
+footer .layout-menu {
+    border-top: 1px solid rgba(114, 114, 126, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+}
+
+footer .layout-menu #direitos-autorais {
+    margin-top: 24px;
+}
+
+footer .layout-menu p {
+    color: #a09f9f;
+    text-align: center;
+    font-family: 'Saira';
+    font-size: 2rem;
+}
+
+.layout-menu {
+    max-width: 1140px;
+    margin: 0 auto;
 }
