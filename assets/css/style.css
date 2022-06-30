@@ -53,3 +53,78 @@ body {
     background-color: #fafafa;
 }
 
+header {
+    background: rgba(10, 10, 25, 0.7);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(114, 114, 126, 0.2);
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* modificações da navegação supeior */
+header .layout-menu nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 8vh;
+    padding: 0px 8px;
+    list-style: none;
+}
+
+header .layout-menu nav img {
+    width: 150px;
+}
+
+/* Altera fonte, cor e posição da lista */
+header .layout-menu nav .nav-list li a {
+    color: #909090;
+    position: relative;
+    font-size: 1.8rem;
+    font-family: 'Saira';
+}
+
+/* Efeito da barra gradiente abaixo dos links na navegação - inicio vindo para a direita  */
+header .layout-menu nav .nav-list li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(270deg, #6610f2 0%, #17161d 100%);
+    transform-origin: bottom right;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* animação abaixo dos links na navegação - saindo pela esquerda */
+header .layout-menu nav .nav-list li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Cor do texto da lista de navegação */
+header .layout-menu nav .nav-list li a:hover {
+    color: #fafafa;
+}
+
+/* HOME */
+/* COR posicao e padding do menu de navegação */
+#s-home {
+    padding: 0px 50px;
+    background-color: #080713;
+    position: relative;
+}
+/* COR posicao e padding da área do ABOUT ME */
+#s-home .layout-menu #home {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    overflow: hidden;
+    width: 100%;
+}
