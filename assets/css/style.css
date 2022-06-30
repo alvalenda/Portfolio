@@ -81,7 +81,7 @@ header .layout-menu nav img {
 }
 
 /* Altera fonte, cor e posição da lista */
-header .layout-menu nav .nav-list li a {
+header .layout-menu nav .lista-navegacao li a {
     color: #909090;
     position: relative;
     font-size: 1.8rem;
@@ -89,7 +89,7 @@ header .layout-menu nav .nav-list li a {
 }
 
 /* Efeito da barra gradiente abaixo dos links na navegação - inicio vindo para a direita  */
-header .layout-menu nav .nav-list li a::after {
+header .layout-menu nav .lista-navegacao li a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -103,13 +103,13 @@ header .layout-menu nav .nav-list li a::after {
 }
 
 /* animação abaixo dos links na navegação - saindo pela esquerda */
-header .layout-menu nav .nav-list li a:hover::after {
+header .layout-menu nav .lista-navegacao li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-/* Cor do texto da lista de navegação */
-header .layout-menu nav .nav-list li a:hover {
+/* Cor do texto da lista de navegação ao fazer mouse hover */
+header .layout-menu nav .lista-navegacao li a:hover {
     color: #fafafa;
 }
 
@@ -129,14 +129,14 @@ header .layout-menu nav .nav-list li a:hover {
     width: 100%;
 }
 
-#s-home .grid-layout #home #home-container-text h1 {
+#s-home .layout-menu #home #home-container-text h1 {
     color: #fafafa;
     font-size: 2.4rem;
     font-weight: 400;
     font-family: 'Saira';
 }
 
-#s-home .grid-layout #home #home-container-text h1 #home-name {
+#s-home .layout-menu #home #home-container-text h1 #home-name {
     font-size: 5.6rem;
     font-weight: 500;
 }
