@@ -50,7 +50,7 @@ input:focus {
 
 body {
     font-family: 'Saira';
-    background-color: #dadada;
+    color: #dadada;
 }
 
 html {
@@ -101,7 +101,6 @@ header .layout-menu nav .lista-navegacao li a {
     color: #bbbbbb;
     position: relative;
     font-size: 2rem;
-    /* font-family: 'Saira'; */
 }
 
 /* Efeito da barra gradiente abaixo dos links na navegação - inicio vindo para a direita  */
@@ -115,7 +114,7 @@ header .layout-menu nav .lista-navegacao li a::after {
     left: 0;
     background: linear-gradient(250deg, #6012df 0%, #17161d 100%);
     transform-origin: bottom right;
-    transition: transform 1s cubic-bezier(0.8, 0, 0.08, 1);
+    transition: transform 0.8s cubic-bezier(0.8, 0, 0.08, 1);
 }
 
 /* animação abaixo dos links na navegação - saindo pela esquerda */
@@ -187,24 +186,21 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 footer .layout-menu {
-    border-top: 1px solid rgba(114, 114, 126, 0.2);
+    border-top: 1px solid rgba(104, 97, 110, 0.3);
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    text-align: center;
     width: 100%;
-    padding: 8px;
+    padding: 0.5rem;
 }
 
 footer .layout-menu #direitos-autorais {
-    margin-top: 24px;
+    margin-top: 3rem;
 }
 
 footer .layout-menu p {
-    color: #a09f9f;
-    text-align: center;
-    /* font-family: 'Saira'; */
+    color: #cacaca;
     font-size: 2rem;
 }
 
