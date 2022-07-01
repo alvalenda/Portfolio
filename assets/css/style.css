@@ -98,10 +98,10 @@ header .layout-menu nav .lista-navegacao li {
 
 /* Altera fonte, cor e posição ancoradas da lista */
 header .layout-menu nav .lista-navegacao li a {
-    color: #c5c3c3;
+    color: #bbbbbb;
     position: relative;
     font-size: 2rem;
-    font-family: 'Saira';
+    /* font-family: 'Saira'; */
 }
 
 /* Efeito da barra gradiente abaixo dos links na navegação - inicio vindo para a direita  */
@@ -156,7 +156,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
     color: #fafafa;
     font-size: 2.4rem;
     font-weight: 400;
-    font-family: 'Saira';
+    /* font-family: 'Saira'; */
 }
 
 #s-home .layout-menu #home #home-container-text h1 #home-name {
@@ -204,7 +204,7 @@ footer .layout-menu #direitos-autorais {
 footer .layout-menu p {
     color: #a09f9f;
     text-align: center;
-    font-family: 'Saira';
+    /* font-family: 'Saira'; */
     font-size: 2rem;
 }
 
