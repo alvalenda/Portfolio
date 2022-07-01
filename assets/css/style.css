@@ -53,6 +53,7 @@ body {
     color: #dadada;
 }
 
+/* comportamento do scroll do mouse e redução global da fonte */
 html {
     scroll-behavior: smooth;
     font-size: 66.5%;
@@ -67,6 +68,7 @@ header {
     border-bottom: 1px solid rgba(114, 114, 126, 0.2);
     z-index: 999;
     width: 100%;
+    /* nav-bar fixado no topo do site */
     position: fixed;
     top: 0;
     left: 0;
