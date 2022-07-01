@@ -51,7 +51,6 @@ input:focus {
 body {
     font-family: 'Saira';
     background-color: #fafafa;
-    
 }
 
 html {
@@ -59,8 +58,6 @@ html {
     font-size: 66.5%;
 }
 /*  */
-
-
 
 /*  */
 header {
@@ -73,7 +70,6 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    
 }
 
 /* modificações da navegação supeior */
@@ -131,17 +127,14 @@ header .layout-menu nav .lista-navegacao li a:hover::after {
 /* Cor do texto da lista de navegação ao fazer mouse hover */
 header .layout-menu nav .lista-navegacao li a:hover {
     color: #ffffff;
-    font-size: 2.02rem;
-    transition: 0.6s
-    
+    font-weight: 500;
+    transition: 0.8s;
 }
-
 
 .lista-navegacao.active {
     visibility: initial;
     transition: 1s all ease;
 }
-
 
 /* HOME */
 /* COR posicao e padding do menu de navegação */
