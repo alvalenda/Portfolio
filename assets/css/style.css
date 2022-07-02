@@ -119,7 +119,7 @@ header .layout-menu nav .lista-navegacao li a::after {
     transition: transform 0.8s cubic-bezier(0.8, 0, 0.08, 1);
 }
 
-/* animação abaixo dos links na navegação - saindo pela esquerda */
+/* animação após nos links na navegação - saindo pela esquerda */
 header .layout-menu nav .lista-navegacao li a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -130,6 +130,11 @@ header .layout-menu nav .lista-navegacao li a:hover {
     color: #ffffff;
     font-weight: 500;
     transition: 0.8s;
+}
+
+.imagem-logo:hover {
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
 }
 
 .lista-navegacao.active {
@@ -147,9 +152,31 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 .imagem-menu:hover {
-    transform: scale(1.1);
-    transition: transform 1s ease-in-out;
-    /* transition: 1s all ease-out; */
+    /* transform: scale(1.1); */
+    transition: all 1s ease-in-out;
+    animation: mover 12s ease-in-out infinite;
+    animation-delay: 0.1s;
+}
+
+@keyframes mover {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    20% {
+        transform: translate(50px, 50px);
+    }
+    40% {
+        transform: translate(-50px, 0px);
+    }
+    60% {
+        transform: translate(50px, -50px);
+    }
+    80% {
+        transform: translate(0px, -50px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
 }
 
 /* COR posicao e padding da área do ABOUT ME */
