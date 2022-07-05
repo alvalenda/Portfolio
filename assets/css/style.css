@@ -132,14 +132,17 @@ header .layout-menu nav .lista-navegacao li a:hover {
     transition: 0.8s;
 }
 
+.imagem-logo {
+    transition: transform 2s ease-in-out;
+}
+
 .imagem-logo:hover {
     transform: scale(1.1);
-    transition: transform 1s ease-in-out;
 }
 
 .lista-navegacao.active {
     visibility: initial;
-    transition: 1s all ease;
+    transition: 1s all ease-in-out 0s;
 }
 
 /* HOME */
