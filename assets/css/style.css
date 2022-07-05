@@ -149,7 +149,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 /* COR posicao e padding do menu de navegação */
 #s-home {
     padding: 0px 50px;
-    background-color: #080713;
+    background-color: #0b0a17;
     position: relative;
     font-size: 2.2rem;
 }
@@ -202,15 +202,37 @@ header .layout-menu nav .lista-navegacao li a:hover {
     color: #dadada;
 }
 
+/* SEÇÃO SOBRE */
 #s-about {
-    padding: 96px 48px;
+    padding: 0px 50px;
     background-color: #0b0a17;
+}
+
+#s-about .layout-menu #about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#s-about .layout-menu #about-photo {
+    width: 50%;
+    padding-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* transition: 1s all ease; */
+}
+
+#s-about .layout-menu #about-photo #photo-alvalenda {
+    width: 35rem;
 }
 
 #s-projects {
     padding: 96px 48px;
     text-align: center;
-    background-color: #080713;
+    background-color: #0b0a17;
 }
 
 #s-services {
@@ -220,7 +242,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-skills {
     padding: 96px 48px;
-    background-color: #080713;
+    background-color: #0b0a17;
     padding-bottom: 32px;
 }
 
