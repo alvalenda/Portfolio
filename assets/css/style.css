@@ -149,9 +149,14 @@ header .layout-menu nav .lista-navegacao li a:hover {
 /* COR posicao e padding do menu de navegação */
 #s-home {
     padding: 0px 50px;
-    background-color: #0b0a17;
+    background-color: #0e0d1d;
     position: relative;
     font-size: 2.2rem;
+}
+
+#logo-lab {
+    height: 40rem;
+    width: 40rem;
 }
 
 .imagem-menu:hover {
@@ -192,14 +197,14 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-home .layout-menu #home #home-container-texto h1 {
-    color: #cacaca;
+    color: #b3b3b3;
     font-weight: 300;
 }
 
 #s-home .layout-menu #home #home-container-texto h1 #home-nome {
     font-size: 5.6rem;
     font-weight: 500;
-    color: #dadada;
+    color: #f0f0f0;
 }
 
 /* SEÇÃO SOBRE */
@@ -222,17 +227,112 @@ header .layout-menu nav .lista-navegacao li a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
-    /* transition: 1s all ease; */
+    transition: 1s all ease-in-out;
 }
 
 #s-about .layout-menu #about-photo #photo-alvalenda {
     width: 35rem;
 }
 
+#s-about .layout-menu #about-photo:hover {
+    transform: scale(1.1);
+}
+
+#s-about .layout-menu #about-photo .icone-com-cor img {
+    width: 35rem;
+}
+
+#s-about .layout-menu #about-photo .icone-com-cor {
+    position: absolute;
+    /* background-color: #0b0a17; */
+    border-radius: 4px;
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+#s-about .layout-menu #about-photo .icon-one {
+    top: 2rem;
+    right: 28rem;
+    animation: icon-move1 3s ease 2.9s infinite alternate;
+}
+
+#s-about .layout-menu #about-photo .icon-two {
+    top: 9rem;
+    right: 14rem;
+    animation: icon-move2 3s ease 1.9s infinite alternate;
+}
+
+#s-about .layout-menu #about-photo .icon-three {
+    top: 15rem;
+    right: 40rem;
+    animation: icon-move3 3s ease 0.6s infinite alternate;
+}
+
+@keyframes icon-move1 {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-1rem, 3rem, 0);
+    }
+}
+
+@keyframes icon-move2 {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-2rem, 3rem, 0);
+    }
+}
+
+@keyframes icon-move3 {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-2rem, -3rem, 0);
+    }
+}
+
+#s-about .layout-menu #about-text {
+    width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    #s-about .layout-menu #about-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+}
+
+#s-about .layout-menu #about-text h2 {
+    padding-bottom: 2rem;
+    color: #fafafa;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#s-about .layout-menu #about-text h2 span {
+    color: #6012df;
+    font-size: 5rem;
+}
+
+#s-about .layout-menu #about-text p {
+    line-height: 3.0rem;
+    color: #b3b3b3;
+    font-family: 'Saira';
+    font-size: 2.1rem;
+}
+
+/* SEÇÃO PROJETOS */
+
 #s-projects {
     padding: 96px 48px;
     text-align: center;
-    background-color: #0b0a17;
+    background-color: #0e0d1d;
 }
 
 #s-services {
@@ -242,7 +342,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-skills {
     padding: 96px 48px;
-    background-color: #0b0a17;
+    background-color: #0e0d1d;
     padding-bottom: 32px;
 }
 
