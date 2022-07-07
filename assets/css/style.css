@@ -162,10 +162,16 @@ header .layout-menu nav .lista-navegacao li a:hover {
 /* COR posicao e padding da área do ABOUT ME */
 #s-home .layout-menu #home {
     display: flex;
-    align-items: center;
+    justify-content:center;
+    align-items:center;
     height: 90vh;
     overflow: hidden;
     width: 100%;
+}
+
+#s-home .layout-menu #home #home-container-text {
+    width: 60%;
+    flex-direction: column;
 }
 
 #s-home .layout-menu #home #home-container-texto h1 {
@@ -186,7 +192,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-home .layout-menu #home #home-container-texto a {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background: linear-gradient(
         225deg,
@@ -216,10 +222,9 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 /* tamanho do container da photo */
 #s-home .layout-menu #home #home-container-photo {
+    position: relative;
     width: 40%;
     height: 100vh;
-    position: relative;
-    justify-content: space-evenly;
     transition: all 1.2s ease-in-out 0.2s;
 }
 
@@ -229,10 +234,10 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 /* propriedades do logo dentro do container photo */
 #logo-lab {
-    width: 100%;
+    width: 90%;
     position: absolute;
-    top: 30%;
-    left: 25%;
+    top: 20%;
+    left: 20%;
 }
 
 @media screen and (max-width: 992px) {
@@ -502,11 +507,25 @@ header .layout-menu nav .lista-navegacao li a:hover {
     background-color: #0b0a17;
 }
 
+@media screen and (max-width: 992px) {
+    #s-services {
+        padding: 48px 16px;
+    }
+}
+
+#s-services .layout-menu h2 {
+    text-align: center;
+}
+
+/* SEÇÃO HABILIDADES */
+
 #s-skills {
     padding: 96px 48px;
     background-color: #0e0d1d;
     padding-bottom: 32px;
 }
+
+/* FOOTER */
 
 footer .layout-menu {
     border-top: 1px solid rgba(104, 97, 110, 0.3);
