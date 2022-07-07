@@ -159,6 +159,16 @@ header .layout-menu nav .lista-navegacao li a:hover {
     width: 40rem;
 }
 
+@media screen and (max-width: 992px) {
+    #s-home {
+        padding: 0px 20px;
+    }
+
+    #logo-lab {
+        display: none;
+    }
+}
+
 .imagem-menu:hover {
     /* transform: scale(1.1); */
     transition: all 1s ease-in-out;
@@ -250,6 +260,20 @@ header .layout-menu nav .lista-navegacao li a:hover {
     height: 7.5rem;
 }
 
+@media screen and (max-width: 992px) {
+    #s-about {
+        padding: 0px 20px;
+    }
+
+    #photo-alvalenda {
+        display: none;
+    }
+
+    .icone-com-cor img {
+        display: none;
+    }
+}
+
 #s-about .layout-menu #about-photo .icon-one {
     top: 2rem;
     right: 28rem;
@@ -321,7 +345,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-about .layout-menu #about-text p {
-    line-height: 3.0rem;
+    line-height: 3rem;
     color: #b3b3b3;
     font-family: 'Saira';
     font-size: 2.1rem;
@@ -334,6 +358,54 @@ header .layout-menu nav .lista-navegacao li a:hover {
     text-align: center;
     background-color: #0e0d1d;
 }
+
+@media screen and (max-width: 992px) {
+    #s-projects {
+        padding: 48px 16px;
+    }
+}
+
+#s-projects .layout-menu h2 {
+    padding-bottom: 24px;
+    color: #fafafa;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+#s-projects .layout-menu h2 span {
+    color: #6012df;
+    font-size: 6.2rem;
+}
+
+#s-projects .layout-menu #projects {
+    margin: 2.2rem 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#s-projects .layout-menu #projects > article {
+    background-color: #0b0a17;
+    height: auto;
+    padding: 32px;
+    margin: 8px;
+    flex-basis: calc(33% - 20px);
+    flex-grow: 1;
+    border: 1px solid #080713;
+    transition: 1s all ease;
+}
+
+#s-projects .grid-layout #projects > article:hover {
+    border: 1px solid #6012df;
+}
+
+/* medias queries - talvez */
+
+
+
+/* SEÇÃO SERVIÇOS */
 
 #s-services {
     padding: 96px 48px;
