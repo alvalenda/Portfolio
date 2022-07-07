@@ -179,7 +179,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
     color: #f0f0f0;
 }
 
-#s-home .layout-menu #home #home-container-texto h1 #home-ponto{
+#s-home .layout-menu #home #home-container-texto h1 #home-ponto {
     color: #6012df;
     font-size: 6rem;
 }
@@ -220,7 +220,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
     height: 100vh;
     position: relative;
     justify-content: space-evenly;
-    transition: all 1s ease-in-out;
+    transition: all 1.2s ease-in-out 0.2s;
 }
 
 #s-home .layout-menu #home #home-container-photo:hover {
@@ -246,9 +246,9 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #logo-lab:hover {
-    transition: all 1s ease-in-out;
-    animation: mover 12s ease-in-out infinite;
-    animation-delay: 0.1s;
+    transition: all 1s ease-in-out 0.2s;
+    animation: mover 22s ease-in-out infinite;
+    animation-delay: 0.3s;
 }
 
 @keyframes mover {
