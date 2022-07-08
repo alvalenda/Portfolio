@@ -584,10 +584,10 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-services .layout-menu #services article p {
-    text-align:justify;
+    text-align: justify;
     font-size: 1.8rem;
     line-height: 3rem;
-    color: #909090;
+    color: #a0a0a0;
 }
 
 /* SEÇÃO HABILIDADES */
@@ -598,14 +598,87 @@ header .layout-menu nav .lista-navegacao li a:hover {
     padding-bottom: 32px;
 }
 
+@media screen and (max-width: 992px) {
+    #s-skills {
+        padding: 48px 16px;
+    }
+}
+
+#s-skills .layout-menu #skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 8px;
+}
+
+#s-skills .layout-menu #skills div,
+#s-skills .layout-menu #skills article {
+    width: 50%;
+}
+
+#s-skills .layout-menu #skills #skills-text {
+    min-height: 300px;
+}
+
+#s-skills .layout-menu #skills #skills-text h2 {
+    margin-bottom: 32px;
+    color: #fafafa;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#s-skills .layout-menu #skills #skills-text h2 span {
+    color: #6012df;
+    font-size: 6rem;
+}
+
+#s-skills .layout-menu #skills #skills-text .mudar-descricao {
+    transition: 2s all ease;
+}
+
+#s-skills .layout-menu #skills #skills-text p {
+    max-width: 500px;
+    color: #a0a0a0;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+#s-skills .layout-menu #skills #skills-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+#s-skills .layout-menu #skills #skills-cards article {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    width: 22.5%;
+    flex-grow: 1;
+    height: 130px;
+    background-color: #0b0a17;
+    border: 1px solid #080713;
+    position: relative;
+    transition: 1s all ease;
+}
+
+#s-skills .layout-menu #skills #skills-cards article:hover {
+    border: 1px solid #6012df;
+}
+
 /* FOOTER */
 
 footer .layout-menu {
     border-top: 1px solid rgba(104, 97, 110, 0.3);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
     width: 100%;
     padding: 0.5rem;
 }
