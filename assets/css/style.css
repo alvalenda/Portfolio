@@ -181,7 +181,9 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-home .layout-menu #home #home-container-texto h1 {
-    color: #bd99ba;
+    /* teste entre salmao e cinza */
+    /* color: #bd99ba; */
+    color: #a0a0a0;
     font-weight: 300;
 }
 
@@ -193,7 +195,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-home .layout-menu #home #home-container-texto h1 #home-ponto {
     color: #6012df;
-    font-size: 6rem;
+    font-size: 8rem;
 }
 
 #s-home .layout-menu #home #home-container-texto a {
@@ -415,7 +417,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-about .layout-menu #about-text p {
     line-height: 3rem;
-    color: #b3b3b3;
+    color: #a0a0a0;
     font-family: 'Saira';
     font-size: 2.1rem;
 }
