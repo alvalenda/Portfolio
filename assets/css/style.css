@@ -670,6 +670,24 @@ header .layout-menu nav .lista-navegacao li a:hover {
     border: 1px solid #6012df;
 }
 
+#s-skills .layout-menu #skills #skills-cards article .skills-cards-nome-cima,
+#s-skills .layout-menu #skills #skills-cards article .skills-cards-nome-baixo {
+    /* centraliza a classe com a finalidade de centralizar a imagem do article */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    padding: 5px;
+    width: 125px;
+    transform: translate(-50%, 0%);
+    color: #fafafa;
+    background-color: #0b0a17;
+    font-size: 2rem;
+    /* Some com o texto depois de posicionado */
+    display: none;
+}
+
 /* FOOTER */
 
 footer .layout-menu {
