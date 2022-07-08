@@ -8,20 +8,20 @@ function hoverMudaDescricao(nomeCard, texto) {
     const mudaDescricao = document.querySelector('.mudar-descricao');
 
     document.querySelector(nomeCard).addEventListener('mouseover', () => {
-        mudaDescricao.innerHTML = texto;
+        mudaDescricao.innerText = texto;
     });
 
     document.querySelector(nomeCard).addEventListener('mouseout', () => {
-        mudaDescricao.innerHTML = `Coloque o Mouse sobre um Card para receber sua descrição neste campo.`;
+        mudaDescricao.innerText = `Coloque o Mouse sobre um Card para receber sua descrição neste campo.`;
     });
 }
 
 function digitarPorLetras(elemento) {
-    const textoArray = elemento.innerHTML.split('');
-    elemento.innerHTML = ' ';
+    const textoArray = elemento.innerText.split('');
+    elemento.innerText = ' ';
     textoArray.forEach((letra, n) => {
         setTimeout(() => {
-            elemento.innerHTML += letra;
+            elemento.innerText += letra;
         }, 100 * n);
     });
 }
