@@ -154,6 +154,12 @@ header .layout-menu nav .lista-navegacao li a:hover {
     font-size: 2.2rem;
 }
 
+@media screen and (max-width: 992px) {
+    #s-home {
+        padding: 48px 16px;
+    }
+}
+
 #s-home .layout-menu #home #home-container-texto h1 #home-nome {
     font-size: 5.6rem;
     font-weight: 500;
@@ -236,7 +242,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 #logo-lab {
     width: 90%;
     position: absolute;
-    top: 20%;
+    top: 25%;
     left: 20%;
 }
 
@@ -276,8 +282,14 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 /* SEÇÃO SOBRE */
 #s-about {
-    padding: 0px 50px;
+    padding: 100px 50px;
     background-color: #0b0a17;
+}
+
+@media screen and (max-width: 992px) {
+    #s-about {
+        padding: 48px 16px;
+    }
 }
 
 #s-about .layout-menu #about {
@@ -515,6 +527,15 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-services .layout-menu h2 {
     text-align: center;
+    padding-bottom: 24px;
+    color: #fafafa;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+#s-services .layout-menu h2 span {
+    color: #6012df;
+    font-size: 6rem;
 }
 
 /* SEÇÃO HABILIDADES */
