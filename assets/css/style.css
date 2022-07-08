@@ -748,6 +748,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-skills .layout-menu #skills #skills-cards article .skills-icons {
     width: 60px;
+    opacity: 0.6;
 }
 
 /* FOOTER */
