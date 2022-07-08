@@ -1,3 +1,9 @@
+function anchorClique() {
+    document.querySelector('#anchor-logo').addEventListener('click', () => {
+        digitarPorLetras(document.querySelector('.home-digitado'));
+    });
+}
+
 function hoverMudaDescricao(nomeCard, texto) {
     const mudaDescricao = document.querySelector('.mudar-descricao');
 
@@ -21,6 +27,7 @@ function digitarPorLetras(elemento) {
 }
 
 digitarPorLetras(document.querySelector('.home-digitado'));
+anchorClique();
 
 hoverMudaDescricao(
     '.html',
@@ -34,6 +41,15 @@ hoverMudaDescricao(
     '.js',
     'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional).',
 );
-hoverMudaDescricao('.py', 'Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.');
-hoverMudaDescricao('.nodejs', 'Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.');
-hoverMudaDescricao('.c', 'C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização (ISO).');
+hoverMudaDescricao(
+    '.py',
+    'Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.',
+);
+hoverMudaDescricao(
+    '.nodejs',
+    'Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.',
+);
+hoverMudaDescricao(
+    '.c',
+    'C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização (ISO).',
+);
