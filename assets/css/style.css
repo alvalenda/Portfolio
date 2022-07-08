@@ -595,14 +595,14 @@ header .layout-menu nav .lista-navegacao li a:hover {
 /* SEÇÃO HABILIDADES */
 
 #s-skills {
-    padding: 96px 48px;
+    padding: 0px 50px;
+    /* padding-bottom: 0px; */
     background-color: #0e0d1d;
-    padding-bottom: 32px;
 }
 
 @media screen and (max-width: 992px) {
     #s-skills {
-        padding: 48px 16px;
+        padding: 50px 18px;
     }
 }
 
@@ -612,7 +612,8 @@ header .layout-menu nav .lista-navegacao li a:hover {
     justify-content: space-between;
     align-items: center;
     height: auto;
-    padding: 8px;
+    min-height: 66vh;
+    padding: 8;
 }
 
 #s-skills .layout-menu #skills div,
@@ -672,6 +673,17 @@ header .layout-menu nav .lista-navegacao li a:hover {
     border: 1px solid #6012df;
 }
 
+#s-skills
+    .layout-menu
+    #skills
+    #skills-cards
+    article:hover
+    .skills-cards-nome-cima,
+#s-skills .layout-menu #skills #skills-cards article:hover .skills-cards-nome-baixo {
+    display: block;
+    text-align: center;
+}
+
 #s-skills .layout-menu #skills #skills-cards article .skills-cards-nome-cima,
 #s-skills .layout-menu #skills #skills-cards article .skills-cards-nome-baixo {
     /* centraliza a classe com a finalidade de centralizar a imagem do article */
@@ -688,6 +700,18 @@ header .layout-menu nav .lista-navegacao li a:hover {
     font-size: 2rem;
     /* Some com o texto depois de posicionado */
     display: none;
+}
+
+#s-skills .layout-menu #skills #skills-cards article .skills-cards-nome-cima {
+    top: -48px;
+}
+
+#s-skills .layout-menu #skills #skills-cards article .skills-cards-nome-baixo {
+    bottom: -48px;
+}
+
+#s-skills .layout-menu #skills #skills-cards article .skills-icons {
+    width: 60px;
 }
 
 /* FOOTER */
