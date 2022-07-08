@@ -132,13 +132,14 @@ header .layout-menu nav .lista-navegacao li a:hover {
     transition: 0.8s;
 }
 
-.imagem-logo {
+/* tranform Removido - Agora é uma ancora que leva ao HOME */
+/* .imagem-logo {
     transition: transform 2s ease-in-out;
 }
 
 .imagem-logo:hover {
     transform: scale(1.1);
-}
+} */
 
 .lista-navegacao.active {
     visibility: initial;
@@ -679,7 +680,12 @@ header .layout-menu nav .lista-navegacao li a:hover {
     #skills-cards
     article:hover
     .skills-cards-nome-cima,
-#s-skills .layout-menu #skills #skills-cards article:hover .skills-cards-nome-baixo {
+#s-skills
+    .layout-menu
+    #skills
+    #skills-cards
+    article:hover
+    .skills-cards-nome-baixo {
     display: block;
     text-align: center;
 }
