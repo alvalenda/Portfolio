@@ -161,11 +161,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
     }
 }
 
-#s-home .layout-menu #home #home-container-texto h1 #home-nome {
-    font-size: 5.6rem;
-    font-weight: 500;
-}
-
 /* COR posicao e padding da área do ABOUT ME */
 #s-home .layout-menu #home {
     display: flex;
@@ -188,6 +183,12 @@ header .layout-menu nav .lista-navegacao li a:hover {
     font-weight: 300;
 }
 
+#s-home .layout-menu #home #home-container-texto div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 #s-home .layout-menu #home #home-container-texto h1 #home-nome {
     font-size: 6rem;
     font-weight: 500;
@@ -197,6 +198,35 @@ header .layout-menu nav .lista-navegacao li a:hover {
 #s-home .layout-menu #home #home-container-texto h1 #home-ponto {
     color: #6012df;
     font-size: 8rem;
+}
+
+#s-home .layout-menu #home #home-container-texto div img {
+    margin-left: 0.5rem;
+    width: 2rem;
+    height: 4rem;
+    transition: 1s all ease;
+    animation: cursorTexto 2s ease infinite;
+}
+
+@keyframes cursorTexto {
+    0% {
+        scale: 1;
+        opacity: 0.9;
+
+    }
+
+    50% {
+        scale: 0.6;
+        opacity: 0.4;
+
+    }
+    
+    100% {
+        scale: 1;
+        opacity: 0.9;
+
+    }
+
 }
 
 #s-home .layout-menu #home #home-container-texto a {
