@@ -1,22 +1,22 @@
 function hoverMudaDescricao(nomeCard, texto) {
-    var mudaDescricao = document.querySelector('.mudar-descricao');
+    const mudaDescricao = document.querySelector('.mudar-descricao');
 
     document.querySelector(nomeCard).addEventListener('mouseover', () => {
         mudaDescricao.innerHTML = texto;
     });
 
     document.querySelector(nomeCard).addEventListener('mouseout', () => {
-        mudaDescricao.innerHTML = `*passe o cursor do mouse no card para ler*`;
+        mudaDescricao.innerHTML = `Coloque o Mouse sobre um Card para receber sua descrição neste campo.`;
     });
 }
 
 function digitarPorLetras(elemento) {
     const textoArray = elemento.innerHTML.split('');
     elemento.innerHTML = ' ';
-    textoArray.forEach(function (letra, i) {
-        setTimeout(function () {
+    textoArray.forEach((letra, n) => {
+        setTimeout(() => {
             elemento.innerHTML += letra;
-        }, 100 * i);
+        }, 100 * n);
     });
 }
 
@@ -32,8 +32,8 @@ hoverMudaDescricao(
 );
 hoverMudaDescricao(
     '.js',
-    'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.',
+    'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional).',
 );
-hoverMudaDescricao('.py', 'Descrição do Python.');
-hoverMudaDescricao('.nodejs', 'Descrição do NodeJs.');
-hoverMudaDescricao('.c', 'Descrição do C.');
+hoverMudaDescricao('.py', 'Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.');
+hoverMudaDescricao('.nodejs', 'Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web.');
+hoverMudaDescricao('.c', 'C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização (ISO).');
