@@ -17,6 +17,10 @@ function hoverMudaDescricao(nomeCard, texto) {
 }
 
 function digitarPorLetras(elemento) {
+    if (digitando[0] === true) return;
+
+    digitando[0] = true;
+
     const textoArray = elemento.innerText.split('');
     elemento.innerText = ' ';
     textoArray.forEach((letra, n) => {
@@ -24,6 +28,11 @@ function digitarPorLetras(elemento) {
             elemento.innerText += letra;
         }, 100 * n);
     });
+
+    // setta intervalo para poder digitar novamente evitando um bug
+    setTimeout(() => {
+        digitando[0] = false;
+    }, 3000);
 }
 
 function iniciarEventos() {
@@ -56,6 +65,8 @@ function iniciarEventos() {
     // Inicia Evento de clicar na Logo e Reescrever texto digitado na HOME
     homeLogoClique();
 }
+
+const digitando = [false];
 
 function main() {
     digitarPorLetras(document.querySelector('.home-digitado'));
