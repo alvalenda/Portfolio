@@ -100,7 +100,8 @@ header .layout-menu nav .lista-navegacao li {
 
 /* Altera fonte, cor e posição ancoradas da lista */
 header .layout-menu nav .lista-navegacao li a {
-    color: #bbbbbb;
+    color: #f0f0f0;
+    font-weight: 400;
     position: relative;
     font-size: 2rem;
 }
