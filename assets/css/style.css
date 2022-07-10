@@ -488,6 +488,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 #s-projects .layout-menu #projects > article {
     background-color: #0b0a17;
     height: auto;
+    max-height: 50rem;
     padding: 32px;
     margin: 5px;
     flex-basis: calc(33% - 20px);
@@ -509,8 +510,9 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-projects .layout-menu #projects > article p {
-    line-height: 30px;
+    line-height: 25px;
     margin-top: 20px;
+    height: 10rem;
     color: #a0a0a0;
     font-family: 'Saira';
     font-size: 1.8rem;
@@ -518,7 +520,8 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-projects .layout-menu #projects a {
     display: flex;
-    width: 90%;
+    width: 80%;
+    height: 80%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -540,8 +543,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
     padding: 0.75rem 1rem;
     max-width: 20rem;
     border: 1px solid rgba(102, 16, 242, 0.5);
-    transition: all 1s ease-in-out;
-    margin-top: 2rem;
     font-size: 2rem;
     transition: 2s all ease;
 }
@@ -554,8 +555,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
         rgba(102, 16, 242, 0.6) 0%,
         rgba(102, 16, 242, 0) 100%
     );
-
-    
 }
 
 #s-projects .layout-menu #projects a img {
