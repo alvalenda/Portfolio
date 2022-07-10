@@ -870,6 +870,11 @@ footer .layout-menu #footer-powered {
     justify-content: center;
 }
 
+footer .layout-menu #footer-powered img {
+    width: 8.2rem;
+    margin: 0;
+}
+
 .layout-menu {
     max-width: 1140px;
     margin: 0 auto;
