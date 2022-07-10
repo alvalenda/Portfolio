@@ -50,7 +50,7 @@ input:focus {
 
 body {
     font-family: 'Saira';
-    /* color: #a0a0a0; */
+    background-color: #0e0d1d;
 }
 
 /* comportamento do scroll do mouse e redução global da fonte */
@@ -84,7 +84,7 @@ header .layout-menu nav {
     padding: 0px 8px;
 }
 
-header .layout-menu nav img {
+header .layout-menu nav a img {
     width: 150px;
 }
 
@@ -113,7 +113,7 @@ header .layout-menu nav .lista-navegacao li a::after {
     width: 100%;
     transform: scaleX(0);
     height: 1px;
-    bottom: -6px;
+    bottom: -2px;
     left: 0;
     background: linear-gradient(270deg, #6012df 0%, #17161d 100%);
     transform-origin: bottom right;
@@ -165,7 +165,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 /* COR posicao e padding da área do ABOUT ME */
 #s-home .layout-menu #home {
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     height: 90vh;
     overflow: hidden;
@@ -202,27 +202,23 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-home .layout-menu #home #home-container-texto div img {
-    margin-left: 0.5rem;
+    /* margin-left: 0.5rem; */
     width: 2rem;
     height: 4rem;
-    transition: 1s all ease;
-    animation: cursorTexto 2s ease infinite;
+    animation: cursorTexto 1.5s infinite;
 }
 
 @keyframes cursorTexto {
     0% {
-        scale: 1;
-        opacity: 0.9;
+        opacity: 1;
     }
 
     50% {
-        scale: 0.6;
-        opacity: 0.4;
+        opacity: 0;
     }
 
     100% {
-        scale: 1;
-        opacity: 0.9;
+        opacity: 1;
     }
 }
 
@@ -265,15 +261,15 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-home .layout-menu #home #home-container-photo:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* propriedades do logo dentro do container photo */
 #logo-lab {
-    width: 90%;
+    width: 100%;
     position: absolute;
     top: 25%;
-    left: 20%;
+    left: -10%;
 }
 
 @media screen and (max-width: 992px) {
@@ -586,7 +582,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
     );
     backdrop-filter: blur(10px);
     padding: 1.4rem 2rem;
-    max-width: 25rem;
+    max-width: 26rem;
     border: 1px solid rgba(102, 16, 242, 0.5);
     transition: all 1s ease-in-out;
     margin-top: 7rem;
@@ -597,7 +593,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-projects .layout-menu .button-github:hover {
     padding: 1.4rem 3rem;
-    max-width: 29rem;
+    max-width: 30rem;
     background: linear-gradient(
         225deg,
         rgba(102, 16, 242, 0.6) 0%,
@@ -640,7 +636,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-services .layout-menu #services article {
     background-color: #080713;
-    height: auto;
+    height: 50vh;
     padding: 32px;
     margin: 10px;
     flex-basis: calc(33% - 20px);
@@ -660,11 +656,11 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-services .layout-menu #services article div {
-    height: 90px;
+    height: 45px;
 }
 
 #s-services .layout-menu #services article div img {
-    width: 90px;
+    width: 180px;
     margin: 0 auto;
 }
 
@@ -674,12 +670,13 @@ header .layout-menu nav .lista-navegacao li a:hover {
     color: #fafafa;
     font-size: 2.4rem;
     font-weight: 500;
+    margin-top: 50%;
 }
 
 #s-services .layout-menu #services article p {
     text-align: justify;
-    font-size: 1.8rem;
-    line-height: 3rem;
+    font-size: 1.6rem;
+    line-height: 1.5em;
     color: #a0a0a0;
 }
 
@@ -852,6 +849,7 @@ footer .layout-menu div a {
 
 footer .layout-menu div a img {
     filter: opacity(0.8) grayscale(60%);
+    width: 3rem;
 }
 
 footer .layout-menu p {
