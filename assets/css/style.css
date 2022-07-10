@@ -814,6 +814,10 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 /* FOOTER */
 
+footer {
+    background-color: #0e0d1d;
+}
+
 footer .layout-menu {
     border-top: 1px solid rgba(104, 97, 110, 0.3);
     display: flex;
@@ -822,16 +826,45 @@ footer .layout-menu {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 0.5rem;
+    padding-right: 0.5rem;
+    height: 10vh;
+    /* margin-bottom: 1rem; */
 }
 
 footer .layout-menu #direitos-autorais {
-    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+footer .layout-menu div {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 22rem;
+    max-height: 3rem;
+}
+
+footer .layout-menu div a {
+    width: 3rem;
+}
+
+footer .layout-menu div a img {
+    filter: opacity(0.8) grayscale(60%);
 }
 
 footer .layout-menu p {
+    align-items: center;
     color: #cacaca;
     font-size: 2rem;
+}
+
+footer .layout-menu #footer-powered {
+    width: 12rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .layout-menu {
