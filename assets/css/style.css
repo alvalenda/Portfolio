@@ -489,11 +489,11 @@ header .layout-menu nav .lista-navegacao li a:hover {
     background-color: #0b0a17;
     height: auto;
     padding: 32px;
-    margin: 8px;
+    margin: 5px;
     flex-basis: calc(33% - 20px);
     flex-grow: 1;
     border: 1px solid #080713;
-    transition: 1s all ease;
+    transition: 2s all ease;
 }
 
 #s-projects .layout-menu #projects > article:hover {
@@ -509,16 +509,39 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-projects .layout-menu #projects > article p {
-    line-height: 24px;
-    margin-top: 24px;
+    line-height: 30px;
+    margin-top: 20px;
     color: #a0a0a0;
-    line-height: 3.2rem;
     font-family: 'Saira';
     font-size: 1.8rem;
 }
 
+#s-projects .layout-menu #projects a {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
 
-#s-projects .layout-menu a {
+#s-projects .layout-menu #projects a img {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #080713;
+    filter: hue-rotate(50deg) grayscale(90%) opacity(60%);
+    transition: all 2s ease;
+}
+
+#s-projects .layout-menu #projects a img:hover {
+    filter: hue-rotate(0deg) grayscale(0%) opacity(100%);
+    /* border: 1px solid #6012df; */
+}
+
+#s-projects .layout-menu .button-github {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -540,7 +563,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
     transition: 2s all ease;
 }
 
-#s-projects .layout-menu a:hover {
+#s-projects .layout-menu .button-github:hover {
     padding: 1.4rem 3rem;
     max-width: 29rem;
     background: linear-gradient(
@@ -548,7 +571,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
         rgba(102, 16, 242, 0.6) 0%,
         rgba(102, 16, 242, 0) 100%
     );
-
 }
 
 /* SEÇÃO SERVIÇOS */
