@@ -165,7 +165,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 /* COR posicao e padding da área do ABOUT ME */
 #s-home .layout-menu #home {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     height: 90vh;
     overflow: hidden;
@@ -177,17 +177,19 @@ header .layout-menu nav .lista-navegacao li a:hover {
     flex-direction: column;
 }
 
-#s-home .layout-menu #home #home-container-texto h1 {
-    /* teste entre salmao e cinza */
-    /* color: #bd99ba; */
-    color: #a0a0a0;
-    font-weight: 300;
-}
-
 #s-home .layout-menu #home #home-container-texto div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    min-height: 6rem;
+}
+
+#s-home .layout-menu #home #home-container-texto h1 {
+    color: #a0a0a0;
+    text-align: left;
+    line-height: 6rem;
+    justify-content: center;
+    font-weight: 300;
 }
 
 #s-home .layout-menu #home #home-container-texto h1 #home-nome {
@@ -310,6 +312,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 #s-about {
     padding: 100px 50px;
     background-color: #0b0a17;
+    min-height: 90vh;
 }
 
 @media screen and (max-width: 992px) {
@@ -323,6 +326,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    min-height: 60vh;
 }
 
 #s-about .layout-menu #about-photo {
@@ -336,7 +340,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-about .layout-menu #about-photo #photo-alvalenda {
-    width: 35rem;
+    width: 40rem;
 }
 
 #s-about .layout-menu #about-photo:hover {
@@ -416,6 +420,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-about .layout-menu #about-text {
     width: 50%;
+    min-height: 35rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -444,6 +449,47 @@ header .layout-menu nav .lista-navegacao li a:hover {
     color: #a0a0a0;
     font-family: 'Saira';
     font-size: 2.1rem;
+    min-height: 12rem;
+    
+}
+
+#s-about .layout-menu #about article section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10rem;
+}
+
+#s-about .layout-menu #about article .article-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+    background: linear-gradient(
+        225deg,
+        rgba(102, 16, 242, 0.3) 0%,
+        rgba(102, 16, 242, 0) 100%
+    );
+    backdrop-filter: blur(10px);
+    padding: 1rem 5rem;
+    max-width: 26rem;
+    max-height: 5rem;
+    border: 1px solid rgba(102, 16, 242, 0.5);
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: 2s all ease;
+    transform-origin: center;
+}
+
+#s-about .layout-menu #about article .article-button:hover {
+    max-height: 7rem;
+    padding: 2rem 5rem;
+    background: linear-gradient(
+        225deg,
+        rgba(102, 16, 242, 0.6) 0%,
+        rgba(102, 16, 242, 0) 100%
+    );
 }
 
 /* SEÇÃO PROJETOS */
@@ -522,35 +568,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
     align-items: center;
     margin: 0 auto;
     margin-top: 2rem;
-}
-
-#s-projects .layout-menu #projects article .article-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    color: #f0f0f0;
-    background: linear-gradient(
-        225deg,
-        rgba(102, 16, 242, 0.3) 0%,
-        rgba(102, 16, 242, 0) 100%
-    );
-    backdrop-filter: blur(10px);
-    padding: 0.75rem 1rem;
-    max-width: 20rem;
-    border: 1px solid rgba(102, 16, 242, 0.5);
-    font-size: 1.8rem;
-    font-weight: 100;
-    transition: 2s all ease;
-}
-
-#s-projects .layout-menu #projects article .article-button:hover {
-    /* max-width: 21rem; */
-    background: linear-gradient(
-        225deg,
-        rgba(102, 16, 242, 0.6) 0%,
-        rgba(102, 16, 242, 0) 100%
-    );
 }
 
 #s-projects .layout-menu #projects a img {
@@ -819,12 +836,11 @@ footer .layout-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     text-align: center;
-    width: 100%;
     padding-right: 0.5rem;
+    padding-top: 1.5rem;
+    width: 100%;
     height: 10vh;
-    /* margin-bottom: 1rem; */
 }
 
 footer .layout-menu #direitos-autorais {
@@ -833,7 +849,6 @@ footer .layout-menu #direitos-autorais {
     text-align: center;
 }
 footer .layout-menu div {
-    margin-top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -841,15 +856,6 @@ footer .layout-menu div {
     flex-direction: row;
     width: 22rem;
     max-height: 3rem;
-}
-
-footer .layout-menu div a {
-    width: 3rem;
-}
-
-footer .layout-menu div a img {
-    filter: opacity(0.8) grayscale(60%);
-    width: 3rem;
 }
 
 footer .layout-menu p {
