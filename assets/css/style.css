@@ -549,8 +549,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-projects .layout-menu #projects article .article-button:hover {
-    padding: 0.75rem 1rem;
-    max-width: 24rem;
+    /* max-width: 21rem; */
     background: linear-gradient(
         225deg,
         rgba(102, 16, 242, 0.6) 0%,
