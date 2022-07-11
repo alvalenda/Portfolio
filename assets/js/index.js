@@ -1,4 +1,9 @@
 function homeLogoClique() {
+    /**
+     *
+     *
+     *
+     */
     document.querySelector('#anchor-logo').addEventListener('click', () => {
         digitarPorLetras(document.querySelector('.home-digitado'));
     });

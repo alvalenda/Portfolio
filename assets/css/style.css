@@ -654,7 +654,8 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-services .layout-menu #services article {
     background-color: #080713;
-    height: 50vh;
+    height: auto;
+    min-height: 50vh;
     padding: 32px;
     margin: 10px;
     flex-basis: calc(33% - 20px);
