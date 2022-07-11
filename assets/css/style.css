@@ -897,9 +897,9 @@ header .layout-menu nav .lista-navegacao li a:hover {
     /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
-    width: 22.5%;
+    width: 25%;
     flex-grow: 1;
-    height: 130px;
+    height: 150px;
     background-color: #0b0a17;
     border: 1px solid #080713;
     position: relative;
@@ -945,16 +945,54 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-skills .layout-menu #skills #skills-cards article .skills-cards-nome-cima {
-    top: -48px;
+    top: -58px;
 }
 
 #s-skills .layout-menu #skills #skills-cards article .skills-cards-nome-baixo {
-    bottom: -48px;
+    bottom: -58px;
 }
 
 #s-skills .layout-menu #skills #skills-cards article .skills-icons {
     width: 60px;
     opacity: 0.6;
+}
+
+@media screen and (max-width: 720px) {
+    #s-skills {
+        align-items: center;
+        padding: 0px 0px;
+        min-height: 80rem;
+        min-width: 50rem;
+        width: auto;
+    }
+
+    #s-skills .layout-menu #skills #skills-text p {
+        line-height: 2.5rem;
+        font-size: 2rem;
+        min-height: 25vh;
+    }
+
+    #s-skills .layout-menu #skills {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        max-height: 95vh;
+    }
+    #s-skills
+        .layout-menu
+        #skills
+        #skills-cards
+        article:hover
+        .skills-cards-nome-cima,
+    #s-skills
+        .layout-menu
+        #skills
+        #skills-cards
+        article:hover
+        .skills-cards-nome-baixo {
+        display: none;
+    }
 }
 
 /* FOOTER */
