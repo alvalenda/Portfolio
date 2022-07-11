@@ -145,12 +145,13 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
     header .layout-menu nav {
         flex-wrap: wrap;
-        justify-content:left;
-        align-items:center;
+        justify-content: space-between;
+        align-items: center;
         height: auto;
         width: auto;
-        padding: 0px;
+        padding-right: 0;
         margin: 0;
+        margin-right: 2rem;
     }
 
     header .layout-menu nav a img {
@@ -160,7 +161,7 @@ header .layout-menu nav .lista-navegacao li a:hover {
     }
 
     header .layout-menu nav .lista-navegacao li a {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         height: auto;
         width: auto;
         padding: 0;
@@ -170,17 +171,16 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 @media screen and (max-width: 720px) {
     header {
-        padding: 0px;
         height: auto;
-        width: auto;
+        min-height: 6rem;
+        width: 100%;
     }
     header .layout-menu nav {
         flex-wrap: wrap;
-        justify-content:space-around;
+        justify-content: space-between;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         height: auto;
-        width: auto;
         padding: 0px;
         margin: 0;
     }
@@ -192,10 +192,11 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
     header .layout-menu nav .lista-navegacao li {
         margin: 0.7rem;
+        margin-top: 1.4rem;
     }
 
     header .layout-menu nav .lista-navegacao li a {
-        font-size: 1.25rem;
+        font-size: 1.4rem;
         height: auto;
         width: auto;
         padding: 0;
@@ -215,12 +216,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
     background-color: #0e0d1d;
     position: relative;
     font-size: 2.2rem;
-}
-
-@media screen and (max-width: 992px) {
-    #s-home {
-        padding: 48px 16px;
-    }
 }
 
 /* COR posicao e padding da área do ABOUT ME */
@@ -335,16 +330,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
     left: -10%;
 }
 
-@media screen and (max-width: 992px) {
-    #s-home {
-        padding: 0px 20px;
-    }
-
-    #logo-lab {
-        display: none;
-    }
-}
-
 #logo-lab:hover {
     transition: all 1s ease-in-out 0.2s;
     animation: mover 22s ease-in-out infinite;
@@ -369,17 +354,46 @@ header .layout-menu nav .lista-navegacao li a:hover {
     }
 }
 
+@media screen and (max-width: 992px) {
+    #s-home {
+        padding: 0px;
+        font-size: 2rem;
+    }
+    #logo-lab {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #s-home .layout-menu #home #home-container-texto div {
+        min-height: 15vh;
+        height: auto;
+        width: auto;
+    }
+
+    #s-home .layout-menu #home #home-container-texto h1 {
+        justify-content: left;
+        font-weight: 300;
+        line-height: 6rem;
+        font-size: 3rem;
+    }
+
+    #s-home .layout-menu #home #home-container-texto h1 #home-nome {
+        font-size: 3rem;
+        font-weight: 500;
+        color: #f0f0f0;
+    }
+
+    #s-home .layout-menu #home #home-container-photo {
+        width: 10%;
+    }
+}
+
 /* SEÇÃO SOBRE */
 #s-about {
     padding: 100px 50px;
     background-color: #0b0a17;
     min-height: 90vh;
-}
-
-@media screen and (max-width: 992px) {
-    #s-about {
-        padding: 48px 16px;
-    }
 }
 
 #s-about .layout-menu #about {
@@ -418,20 +432,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
     border-radius: 4px;
     width: 7.5rem;
     height: 7.5rem;
-}
-
-@media screen and (max-width: 992px) {
-    #s-about {
-        padding: 0px 20px;
-    }
-
-    #photo-alvalenda {
-        display: none;
-    }
-
-    .icone-com-cor img {
-        display: none;
-    }
 }
 
 #s-about .layout-menu #about-photo .icon-one {
@@ -482,15 +482,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
 #s-about .layout-menu #about-text {
     width: 50%;
     min-height: 35rem;
-}
-
-@media screen and (max-width: 1200px) {
-    #s-about .layout-menu #about-text {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0px;
-    }
 }
 
 #s-about .layout-menu #about-text h2 {
@@ -550,6 +541,70 @@ header .layout-menu nav .lista-navegacao li a:hover {
         rgba(102, 16, 242, 0.6) 0%,
         rgba(102, 16, 242, 0) 100%
     );
+}
+
+@media screen and (max-width: 1200px) {
+    #s-about .layout-menu #about-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #s-about {
+        padding: 0px 20px;
+    }
+
+    #photo-alvalenda {
+        display: none;
+    }
+
+    .icone-com-cor img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #s-about .layout-menu #about {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 30vh;
+    }
+
+    #s-about .layout-menu #about-text {
+        width: 80%;
+        margin-top: 10rem;
+        min-height: 5rem;
+    }
+
+    #s-about .layout-menu #about article section {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        min-height: 15em;
+        margin-top: 4rem;
+    }
+
+    #s-about .layout-menu #about article .article-button {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto 0;
+        min-width: 17rem;
+        padding: 2rem 5rem;
+        max-width: 26rem;
+        max-height: 5rem;
+        margin-top: 2rem;
+    }
+
+    #s-about .layout-menu #about article .article-button:hover {
+        max-height: 5rem;
+        max-width: 28rem;
+        padding: 2rem 7rem;
+    }
 }
 
 /* SEÇÃO PROJETOS */

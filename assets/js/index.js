@@ -22,7 +22,8 @@ function hoverMudaDescricao(nomeCard, texto) {
     });
 
     document.querySelector(nomeCard).addEventListener('mouseout', () => {
-        mudaDescricao.innerText = 'Coloque o Mouse sobre um Card para receber sua descrição neste campo.';
+        mudaDescricao.innerText =
+            'Coloque o Mouse sobre um Card para receber sua descrição neste campo.';
     });
 }
 
