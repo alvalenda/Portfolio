@@ -101,7 +101,7 @@ header .layout-menu nav .lista-navegacao li {
 /* Altera fonte, cor e posição ancoradas da lista */
 header .layout-menu nav .lista-navegacao li a {
     color: #f0f0f0;
-    font-weight: 400;
+    font-weight: 300;
     position: relative;
     font-size: 2rem;
 }
@@ -130,18 +130,78 @@ header .layout-menu nav .lista-navegacao li a:hover::after {
 /* Cor do texto da lista de navegação ao fazer mouse hover */
 header .layout-menu nav .lista-navegacao li a:hover {
     color: #ffffff;
-    font-weight: 500;
-    transition: 0.8s;
+    font-weight: 400;
+    transition: 0.5s ease;
 }
 
-/* tranform Removido - Agora é uma ancora que leva ao HOME */
-/* .imagem-logo {
-    transition: transform 2s ease-in-out;
+@media screen and (max-width: 992px) {
+    header {
+        padding: 0px;
+    }
+
+    header .layout-menu nav .lista-navegacao li {
+        margin: 1rem;
+    }
+
+    header .layout-menu nav {
+        flex-wrap: wrap;
+        justify-content:left;
+        align-items:center;
+        height: auto;
+        width: auto;
+        padding: 0px;
+        margin: 0;
+    }
+
+    header .layout-menu nav a img {
+        align-items: left;
+        width: 10rem;
+        margin-right: 3rem;
+    }
+
+    header .layout-menu nav .lista-navegacao li a {
+        font-size: 1.25rem;
+        height: auto;
+        width: auto;
+        padding: 0;
+        min-height: 3rem;
+    }
 }
 
-.imagem-logo:hover {
-    transform: scale(1.1);
-} */
+@media screen and (max-width: 720px) {
+    header {
+        padding: 0px;
+        height: auto;
+        width: auto;
+    }
+    header .layout-menu nav {
+        flex-wrap: wrap;
+        justify-content:space-around;
+        flex-direction: column;
+        align-items:center;
+        height: auto;
+        width: auto;
+        padding: 0px;
+        margin: 0;
+    }
+
+    header .layout-menu nav a img {
+        align-items: center;
+        width: 10rem;
+    }
+
+    header .layout-menu nav .lista-navegacao li {
+        margin: 0.7rem;
+    }
+
+    header .layout-menu nav .lista-navegacao li a {
+        font-size: 1.25rem;
+        height: auto;
+        width: auto;
+        padding: 0;
+        min-height: 3rem;
+    }
+}
 
 .lista-navegacao.active {
     visibility: initial;
@@ -451,7 +511,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
     font-family: 'Saira';
     font-size: 2.1rem;
     min-height: 12rem;
-    
 }
 
 #s-about .layout-menu #about article section {
@@ -870,11 +929,13 @@ footer .layout-menu #footer-powered {
     width: 12rem;
     align-items: center;
     justify-content: center;
+    /* font-weight: 500; */
 }
 
 footer .layout-menu #footer-powered img {
     width: 8.2rem;
     margin: 0;
+    filter: brightness(90%);
 }
 
 .layout-menu {

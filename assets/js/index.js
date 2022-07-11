@@ -1,14 +1,19 @@
+/**
+ *  @function homeLogoClique
+ *  Um EventListener que aciona a função @digitarPorLetras quando há um clique de mouse no Logo da Home.
+ */
 function homeLogoClique() {
-    /**
-     *
-     *
-     *
-     */
     document.querySelector('#anchor-logo').addEventListener('click', () => {
         digitarPorLetras(document.querySelector('.home-digitado'));
     });
 }
 
+/**
+ * @function hoverMudaDescricao
+ * Insere um texto no elemento html que descreve as skill-cards, retorna um texto padrão quando o mouse sai de um card.
+ * @param {string} nomeCard - representa a classe do elemento que será descrito.
+ * @param {string} texto - uma string contendo a descrição do card específico.
+ */
 function hoverMudaDescricao(nomeCard, texto) {
     const mudaDescricao = document.querySelector('.mudar-descricao');
 
@@ -17,10 +22,15 @@ function hoverMudaDescricao(nomeCard, texto) {
     });
 
     document.querySelector(nomeCard).addEventListener('mouseout', () => {
-        mudaDescricao.innerText = `Coloque o Mouse sobre um Card para receber sua descrição neste campo.`;
+        mudaDescricao.innerText = 'Coloque o Mouse sobre um Card para receber sua descrição neste campo.';
     });
 }
 
+/**
+ * @function digitarPorLetras
+ * Insere texto em um elemento html de forma pausada, simulando efeito de digitação.
+ * @param {Object} elemento - elemento do DOM que terá seu texto interno alterado.
+ */
 function digitarPorLetras(elemento) {
     if (digitando[0] === true) return;
 
@@ -40,8 +50,11 @@ function digitarPorLetras(elemento) {
     }, 3000);
 }
 
+/**
+ * @function iniciarEvento
+ * Inicializa os EventListener das funções @hoverMudaDescricao e @homeLogoClique
+ */
 function iniciarEventos() {
-    // Inicia Eventos de Mouse Hover das Cards de Skills
     hoverMudaDescricao(
         '.html',
         'HTML é uma linguagem baseada em marcação, onde marcamos os elementos para definir quais informações a página vai exibir.',
@@ -71,6 +84,7 @@ function iniciarEventos() {
     homeLogoClique();
 }
 
+/** Variável de controle. Determina o comportamendo da função @digitarPorLetras */
 const digitando = [false];
 
 function main() {
