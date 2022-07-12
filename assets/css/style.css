@@ -134,6 +134,11 @@ header .layout-menu nav .lista-navegacao li a:hover {
     transition: 0.5s ease;
 }
 
+.lista-navegacao.active {
+    visibility: initial;
+    transition: 1s all ease-in-out 0s;
+}
+
 @media screen and (max-width: 992px) {
     header {
         padding: 0px;
@@ -177,36 +182,39 @@ header .layout-menu nav .lista-navegacao li a:hover {
     }
     header .layout-menu nav {
         flex-wrap: wrap;
-        justify-content: space-between;
         flex-direction: column;
-        align-items: center;
         height: auto;
         padding: 0px;
         margin: 0;
     }
 
     header .layout-menu nav a img {
-        align-items: center;
-        width: 10rem;
+        width: 12rem;
+    }
+
+    header .layout-menu nav .lista-navegacao ul {
+        margin: auto 0;
+        align-items: left;
     }
 
     header .layout-menu nav .lista-navegacao li {
-        margin: 0.7rem;
-        margin-top: 1.4rem;
+        justify-content: space-around;
+        margin-top: 2rem;
+        margin-left: 4px;
+        padding-left: 0;
     }
 
     header .layout-menu nav .lista-navegacao li a {
-        font-size: 1.4rem;
-        height: auto;
-        width: auto;
-        padding: 0;
-        min-height: 3rem;
+        padding: 0px;
+        font-size: 1.3rem;
+        text-align: left;
+        line-height: 1rem;
     }
-}
 
-.lista-navegacao.active {
-    visibility: initial;
-    transition: 1s all ease-in-out 0s;
+    header .layout-menu nav #anchor-logo {
+        align-self: center;
+        margin: auto 0;
+    }
 }
 
 /* SEÇÃO HOME */
