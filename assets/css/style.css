@@ -309,8 +309,8 @@ header .layout-menu nav .lista-navegacao li a:hover {
 }
 
 #s-home .layout-menu #home #home-container-texto a:hover {
-    padding: 1.4rem 3rem;
-    max-width: 27rem;
+    /* padding: 1.4rem 3rem; */
+    /* max-width: 27rem; */
     background: linear-gradient(
         225deg,
         rgba(102, 16, 242, 0.6) 0%,
