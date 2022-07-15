@@ -1,6 +1,6 @@
 /**
  *  @function homeLogoClique
- *  Um EventListener que aciona a função @digitarPorLetras quando há um clique de mouse no Logo da Home.
+ *  Um EventListener que aciona a função @digitarPorLetras quando há um clique na Logo da Home.
  */
 function homeLogoClique() {
     document.querySelector('#anchor-logo').addEventListener('click', () => {
@@ -33,9 +33,9 @@ function hoverMudaDescricao(nomeCard, texto) {
  * @param {Object} elemento - elemento do DOM que terá seu texto interno alterado.
  */
 function digitarPorLetras(elemento) {
-    if (digitando[0] === true) return;
+    if (digitando.tag === true) return;
 
-    digitando[0] = true;
+    digitando.tag = true;
 
     const textoArray = elemento.innerText.split('');
     elemento.innerText = ' ';
@@ -47,7 +47,7 @@ function digitarPorLetras(elemento) {
 
     // setta intervalo para poder digitar novamente evitando um bug
     setTimeout(() => {
-        digitando[0] = false;
+        digitando.tag = false;
     }, 3000);
 }
 
@@ -66,7 +66,7 @@ function iniciarEventos() {
     );
     hoverMudaDescricao(
         '.js',
-        'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma (protótipos, orientado a objeto, imperativo e, funcional).',
+        'JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.',
     );
     hoverMudaDescricao(
         '.py',
@@ -81,12 +81,12 @@ function iniciarEventos() {
         'C é uma linguagem de programação compilada de propósito geral, estruturada, imperativa, procedural, padronizada pela Organização Internacional para Padronização (ISO).',
     );
 
-    // Inicia Evento de clicar na Logo e Reescrever texto digitado na HOME
+    // Inicia Evento de clique na Logo
     homeLogoClique();
 }
 
 /** Variável de controle. Determina o comportamendo da função @digitarPorLetras */
-const digitando = [false];
+const digitando = { tag: false };
 
 function main() {
     digitarPorLetras(document.querySelector('.home-digitado'));
