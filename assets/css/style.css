@@ -643,7 +643,6 @@ header .layout-menu nav .lista-navegacao li a:hover {
 
 #s-projects .layout-menu #projects {
     display: flex;
-    flex-basis: calc(33% - 20px);
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
