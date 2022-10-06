@@ -1,5 +1,5 @@
 import "./App.css";
-import reactImage from "@assets/react.svg";
+import img1 from "@assets/avatar1.jpg";
 import { Header } from "@components/layout/Header";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <>
       <Header />
       <div className="App">Olá Mundo!</div>
-      <img src={reactImage} alt="" />
+      <img src={img1} alt="" />
     </>
   );
 }
