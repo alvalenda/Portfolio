@@ -1,4 +1,3 @@
-import img1 from "@assets/avatar1.jpg";
 import { Header } from "@components/layout/Header";
 import { Navbar } from "@components/layout/Navbar";
 import { About } from "@components/About";
@@ -21,7 +20,6 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-      <img src={img1} alt="" />
     </>
   );
 }
