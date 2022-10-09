@@ -1,5 +1,6 @@
 header {
   height: 100vh;
+  min-height: 54rem;
   padding-top: 7rem;
   overflow: hidden;
 }
@@ -62,15 +63,15 @@ header {
 /* ================== MEDIUM DEVICES ================= */
 @media screen and (max-width: 1024px) {
   header {
-    /* height: 68vh; */
-    height: 100vh;
+    height: 68vh;
+    /* height: 100vh; */
   }
 }
 
 /* ================== SMALL DEVICES ================= */
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 80vh;
   }
 
   .header__socials,
