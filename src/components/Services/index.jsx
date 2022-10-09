@@ -1,5 +1,5 @@
 import "./Services.css";
 
 export const Services = () => {
-  return <div>Services</div>;
+  return <section id="services">Services</section>;
 };
