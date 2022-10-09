@@ -6,46 +6,42 @@ import "./Navbar.css";
 
 export const Navbar = () => {
   const [activeNavbar, setActiveNavbar] = useState(() => "#");
-
-  const handleClick = (id) => {
-    // console.log(e);
-    setActiveNavbar(() => id);
-  };
+  const handleClick = (ref) => setActiveNavbar(() => `#${ref}`);
 
   return (
     <nav>
       <a
         href="#"
         className={activeNavbar === "#" ? "active" : ""}
-        onClick={() => handleClick("#")}
+        onClick={() => handleClick("")}
       >
         <AiOutlineHome />
       </a>
       <a
         href="#about"
         className={activeNavbar === "#about" ? "active" : ""}
-        onClick={() => handleClick("#about")}
+        onClick={() => handleClick("about")}
       >
         <AiOutlineUser />
       </a>
       <a
         href="#experience"
         className={activeNavbar === "#experience" ? "active" : ""}
-        onClick={() => handleClick("#experience")}
+        onClick={() => handleClick("experience")}
       >
         <BiBook />
       </a>
       <a
         href="#services"
         className={activeNavbar === "#services" ? "active" : ""}
-        onClick={() => handleClick("#services")}
+        onClick={() => handleClick("services")}
       >
         <RiServiceLine />
       </a>
       <a
         href="#contact"
         className={activeNavbar === "#contact" ? "active" : ""}
-        onClick={() => handleClick("#contact")}
+        onClick={() => handleClick("contact")}
       >
         <BiMessageSquareDetail />
       </a>
