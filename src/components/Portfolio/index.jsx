@@ -53,7 +53,7 @@ export const Portfolio = () => {
 
       <div className="container portfolio__container">
         {data.map((item, index) => (
-          <article className="portfolio__item">
+          <article className="portfolio__item" key={index}>
             <div className="portfolio__item-image">
               <img
                 src={item.image}
