@@ -19,23 +19,78 @@ export const Portfolio = () => {
           </div>
           <h3>This is a portfolio item title</h3>
 
-          <a
-            href="http://github.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn"
-          >
-            Github
-          </a>
+          <div className="portfolio__item-cta">
+            <a
+              href="http://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
+            >
+              Github
+            </a>
 
-          <a
-            href="http://"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-          >
-            Live Demo
-          </a>
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG1} alt="image of PUT NAME OF THE PROJECT" />
+          </div>
+          <h3>This is a portfolio item title</h3>
+
+          <div className="portfolio__item-cta">
+            <a
+              href="http://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
+            >
+              Github
+            </a>
+
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG1} alt="image of PUT NAME OF THE PROJECT" />
+          </div>
+          <h3>This is a portfolio item title</h3>
+
+          <div className="portfolio__item-cta">
+            <a
+              href="http://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
+            >
+              Github
+            </a>
+
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
+              Live Demo
+            </a>
+          </div>
         </article>
       </div>
     </section>
