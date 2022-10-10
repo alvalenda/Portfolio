@@ -55,10 +55,7 @@ export const Portfolio = () => {
         {data.map((item, index) => (
           <article className="portfolio__item" key={index}>
             <div className="portfolio__item-image">
-              <img
-                src={item.image}
-                alt={`image of the project: ${item.title}`}
-              />
+              <img src={item.image} alt={`image of ${item.title}`} />
             </div>
             <h3>{item.title}</h3>
 
