@@ -20,8 +20,9 @@
 
 .service__head {
   background: var(--color-primary);
-  border-radius: 0 0 2rem 2rem;
+  /* border-radius: 0 0 2rem 2rem; */
   box-sizing: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
 }
 
 .service__head h3 {
@@ -43,8 +44,29 @@
 .service__list-icon {
   color: var(--color-primary);
   margin-top: 4px;
+  font-size: 2rem;
 }
 
 .service__list p {
   font-size: 0.9rem;
+}
+
+/* ================== MEDIUM DEVICES ================= */
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .service {
+    height: auto;
+  }
+}
+
+/* ================== SMALL DEVICES ================= */
+@media screen and (max-width: 600px) {
+  .services__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
