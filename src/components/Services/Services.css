@@ -22,7 +22,7 @@
   background: var(--color-primary);
   /* border-radius: 0 0 2rem 2rem; */
   box-sizing: 0 2rem 1rem rgba(0, 0, 0, 0.1);
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .service__head h3 {
