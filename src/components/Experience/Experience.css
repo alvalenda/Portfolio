@@ -24,6 +24,11 @@
   color: var(--color-primary);
 }
 
+/* Align Back and Front experiences  */
+.experience__container > div article {
+  justify-content: center;
+}
+
 .experience__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -52,9 +57,9 @@
     margin: 0 auto;
   }
 
-  .experience__container > div article {
+  /* .experience__container > div article {
     justify-content: center;
-  }
+  } */
 
   .experience__content {
     padding: 1rem;
