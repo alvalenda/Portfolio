@@ -41,7 +41,7 @@ export const Testimonials = () => {
         {/* DINAMIC GENERATING TESTIMONIALS */}
 
         {testimonials.map((item, index) => (
-          <article className="testimonial">
+          <article className="testimonial" key={index}>
             <div className="client__avatar">
               <img src={item.image} alt={`Photo of ${item.name}`} />
             </div>
