@@ -44,9 +44,9 @@ export const Testimonials = () => {
           <article className="testimonial">
             <div className="client__avatar">
               <img src={item.image} alt={`Photo of ${item.name}`} />
-              <h5>{item.name}</h5>
-              <small className="client__review">{item.review}</small>
             </div>
+            <h5>{item.name}</h5>
+            <small className="client__review">{item.review}</small>
           </article>
         ))}
 
