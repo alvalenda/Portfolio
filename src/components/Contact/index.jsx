@@ -10,14 +10,14 @@ export const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <MdOutlineEmail />
+            <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>flavio.alva@outlook.com</h5>
             <a href="mailto:flavio.alva@outlook.com">Send a Message</a>
           </article>
 
           <article className="contact__option">
-            <FaWhatsapp />
+            <FaWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>flavio.alva@outlook.com</h5>
             <a
@@ -30,7 +30,7 @@ export const Contact = () => {
           </article>
 
           <article className="contact__option">
-            <FaDiscord />
+            <FaDiscord className="contact__option-icon" />
             <h4>Discord</h4>
             <h5>flavio.alva@outlook.com</h5>
 
