@@ -4,6 +4,14 @@ import AVT3 from "@assets/avatar3.jpg";
 import AVT4 from "@assets/avatar4.jpg";
 import "./Testimonials.css";
 
+/* Import Swiper Core and required modules */
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+/* import Swiper Styles */
+import "swiper/css";
+import "swiper/css/pagination";
+/* End of Swiper Import */
+
 const testimonials = [
   {
     name: "Person One",
@@ -37,21 +45,27 @@ export const Testimonials = () => {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
-      <div className="container testimonials__container">
+      <Swiper
+        className="container testimonials__container"
+        modules={[Pagination]}
+        spaceBetween={50}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+      >
         {/* DINAMIC GENERATING TESTIMONIALS */}
 
         {testimonials.map((item, index) => (
-          <article className="testimonial" key={index}>
+          <SwiperSlide className="testimonial" key={index}>
             <div className="client__avatar">
               <img src={item.image} alt={`Photo of ${item.name}`} />
             </div>
             <h5>{item.name}</h5>
             <small className="client__review">{item.review}</small>
-          </article>
+          </SwiperSlide>
         ))}
 
         {/* END OF MAP */}
-      </div>
+      </Swiper>
     </section>
   );
 };
