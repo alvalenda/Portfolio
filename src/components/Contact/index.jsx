@@ -6,6 +6,8 @@ import "./Contact.css";
 
 export const Contact = () => {
   const form = useRef();
+  const zapMsg =
+    "Hello! I'm sending this message directly from your React Portfolio.";
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -36,9 +38,9 @@ export const Contact = () => {
           <article className="contact__option">
             <FaWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
-            <h5>flavio.alva@outlook.com</h5>
+            <h5></h5>
             <a
-              href="https://api.whatsapp.com/send?phone=+5524998768978"
+              href={`https://api.whatsapp.com/send?phone=5524998768978&text=${zapMsg}`}
               target="_blank"
               rel="noreferrer"
             >
@@ -49,7 +51,7 @@ export const Contact = () => {
           <article className="contact__option">
             <FaDiscord className="contact__option-icon" />
             <h4>Discord</h4>
-            <h5>flavio.alva@outlook.com</h5>
+            <h5>Flavio Alvarenga#6837</h5>
 
             <a
               href="https://discordapp.com/users/246040430494351362"
