@@ -45,10 +45,11 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  justify-content: space-between;
 }
 
-input,
-textarea {
+form input,
+form textarea {
   background: transparent;
   color: var(--color--white);
   border: 2px solid var(--color-primary-variant);
@@ -56,6 +57,14 @@ textarea {
   padding: 1.5rem;
   resize: none;
   width: 100%;
+}
+
+form textarea {
+  height: 57%;
+}
+
+form button {
+  align-self: center;
 }
 
 /* =================== MEDIA QUERIES ================= */
@@ -66,9 +75,16 @@ textarea {
     gap: 2rem;
   }
 
-  form button {
-    margin: 0 auto;
+  form input {
+    height: 12.5%;
   }
+
+  form textarea {
+    height: 70%;
+  }
+  /* form button {
+    margin: 0 auto;
+  } */
 }
 
 /* ================== SMALL DEVICES ================= */
