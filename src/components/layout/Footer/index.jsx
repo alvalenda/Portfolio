@@ -1,10 +1,12 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import LOGO from "@assets/logo.png";
 import "./Footer.css";
 
 export const Footer = () => {
   return (
     <footer id="footer">
       <a href="#" className="footer__logo">
+        <img src={LOGO} alt="Alva Logo" />
         ALVA
       </a>
       <ul className="permalinks">
