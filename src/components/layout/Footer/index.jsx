@@ -3,7 +3,7 @@ import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <footer id="#footer">
+    <footer id="footer">
       <a href="#" className="footer__logo">
         ALVA
       </a>
