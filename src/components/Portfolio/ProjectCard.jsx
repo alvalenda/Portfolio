@@ -8,12 +8,11 @@ export const ProjectCard = ({ project, number }) => {
   const [ref, inView] = useInView();
 
   useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    }
-    //  else {
-    //   control.start("hidden");
-    // }
+    // every time animation
+    // inView ? control.start("visible") : control.start("hidden");
+
+    // one time animation
+    inView && control.start("visible");
   }, [control, inView]);
 
   return (
