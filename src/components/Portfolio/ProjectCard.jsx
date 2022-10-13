@@ -1,39 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-
-const boxFromLeft = {
-  visible: {
-    x: 0,
-    opacity: 1,
-    filter: `blur(0px)`,
-    transition: {
-      duration: 0.8,
-      delay: 0.2,
-    },
-  },
-  hidden: {
-    x: -100,
-    filter: `blur(2px)`,
-    opacity: 0,
-  },
-};
-const boxFromRight = {
-  visible: {
-    x: 0,
-    opacity: 1,
-    filter: `blur(0px)`,
-    transition: {
-      duration: 0.8,
-      delay: 0.2,
-    },
-  },
-  hidden: {
-    x: 100,
-    filter: `blur(2px)`,
-    opacity: 0,
-  },
-};
+import { boxFromLeft, boxFromRight } from "@/utils/motion";
 
 export const ProjectCard = ({ project, number }) => {
   const control = useAnimation();
@@ -42,9 +10,10 @@ export const ProjectCard = ({ project, number }) => {
   useEffect(() => {
     if (inView) {
       control.start("visible");
-    } else {
-      control.start("hidden");
     }
+    //  else {
+    //   control.start("hidden");
+    // }
   }, [control, inView]);
 
   return (
