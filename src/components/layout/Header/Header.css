@@ -1,21 +1,33 @@
 header {
   height: 100vh;
   min-height: 54rem;
-  padding-top: 7rem;
   overflow: hidden;
+  padding-top: 7rem;
 }
 
 .header__container {
-  position: relative;
   height: 100%;
+  position: relative;
   text-align: center;
+}
+
+header h5 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-right: 17rem;
+}
+
+.header__job-text {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-right: 0;
 }
 
 /* ===================== CTA ===================== */
 .cta {
   display: flex;
-  justify-content: center;
   gap: 1.2rem;
+  justify-content: center;
   margin-top: 2.5rem;
 }
 
