@@ -4,6 +4,7 @@ import IMG3 from "@assets/portfolio3.jpg";
 import IMG4 from "@assets/portfolio4.jpg";
 import IMG5 from "@assets/portfolio5.png";
 import IMG6 from "@assets/portfolio6.jpg";
+import { ProjectCard } from "./ProjectCard";
 import "./Portfolio.css";
 
 const data = [
@@ -53,32 +54,7 @@ export const Portfolio = () => {
 
       <div className="container portfolio__container">
         {data.map((item, index) => (
-          <article className="portfolio__item" key={index}>
-            <div className="portfolio__item-image">
-              <img src={item.image} alt={`image of ${item.title}`} />
-            </div>
-            <h3>{item.title}</h3>
-
-            <div className="portfolio__item-cta">
-              <a
-                href={item.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn"
-              >
-                Github
-              </a>
-
-              <a
-                href={item.demo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-primary"
-              >
-                Deploy
-              </a>
-            </div>
-          </article>
+          <ProjectCard project={item} number={index} />
         ))}
       </div>
     </section>
