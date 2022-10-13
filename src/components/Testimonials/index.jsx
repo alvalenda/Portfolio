@@ -23,7 +23,7 @@ export const Testimonials = () => {
         slidesPerView={1}
         loop={true}
         autoplay={{
-          delay: 5000,
+          delay: 6000,
           disableOnInteraction: false,
         }}
         pagination={{ clickable: true }}
