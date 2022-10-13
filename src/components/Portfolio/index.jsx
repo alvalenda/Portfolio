@@ -1,5 +1,5 @@
 import { ProjectCard } from "./ProjectCard";
-import { portifolioData as data } from "@/utils/portifolio";
+import { portfolioData as data } from "@/utils/portfolio";
 import "./Portfolio.css";
 
 export const Portfolio = () => {
