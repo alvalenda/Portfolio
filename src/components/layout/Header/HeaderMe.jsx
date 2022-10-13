@@ -53,7 +53,7 @@ const boxHello = {
   visible: {
     x: 0,
     opacity: 1,
-    scale: [0, 1.25, 1],
+    scale: [0, 1],
     transition: {
       duration: 1.2,
     },
