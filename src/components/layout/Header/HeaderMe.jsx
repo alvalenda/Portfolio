@@ -1,11 +1,12 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { boxHello, boxName, boxJob } from "@/utils/motion";
+import { boxHello, boxName, letterAnimation } from "@/utils/motion";
 
 export const HeaderMe = () => {
   const control = useAnimation();
   const [ref, inView] = useInView();
+  const stack = [..."Fullstack Developer"];
 
   useEffect(() => {
     if (inView) {
@@ -37,15 +38,19 @@ export const HeaderMe = () => {
         <h1>Flávio Alvarenga.</h1>
       </motion.div>
 
-      <motion.div
-        className="box"
-        ref={ref}
-        variants={boxJob}
-        initial="hidden"
-        animate={control}
-      >
-        <h5 className="header__job-text">Fullstack Developer</h5>
-      </motion.div>
+      <h5 className="header__job-text">
+        {stack.map((letter, i) => (
+          <motion.span
+            key={i}
+            ref={ref}
+            initial="hidden"
+            animate={control}
+            variants={letterAnimation(i)}
+          >
+            <span key={i}>{letter}</span>
+          </motion.span>
+        ))}
+      </h5>
     </>
   );
 };
