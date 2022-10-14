@@ -10,7 +10,7 @@ export const Portfolio = () => {
 
       <div className="container portfolio__container">
         {data.map((item, index) => (
-          <ProjectCard project={item} number={index} />
+          <ProjectCard project={item} number={index} key={index} />
         ))}
       </div>
     </section>

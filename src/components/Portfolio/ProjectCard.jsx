@@ -9,10 +9,10 @@ export const ProjectCard = ({ project, number }) => {
 
   useEffect(() => {
     // every time animation
-    // inView ? control.start("visible") : control.start("hidden");
+    inView ? control.start("visible") : control.start("hidden");
 
     // one time animation
-    inView && control.start("visible");
+    // inView && control.start("visible");
   }, [control, inView]);
 
   return (
@@ -23,7 +23,7 @@ export const ProjectCard = ({ project, number }) => {
       initial="hidden"
       animate={control}
     >
-      <article className="portfolio__item" key={number}>
+      <article className="portfolio__item">
         <div className="portfolio__item-image">
           <img src={project.image} alt={`image of ${project.title}`} />
         </div>
