@@ -23,6 +23,10 @@ header h5 {
   margin-right: 0;
 }
 
+/* .header__job-text div {
+  display: inline-flex;
+} */
+
 /* ===================== CTA ===================== */
 .cta {
   display: flex;
