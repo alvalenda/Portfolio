@@ -1,6 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { boxHello, boxName, boxJob } from "@/utils/motion";
 
 export const HeaderMe = () => {
   const control = useAnimation();
@@ -47,55 +48,4 @@ export const HeaderMe = () => {
       </motion.div>
     </>
   );
-};
-
-const boxHello = {
-  visible: {
-    x: 0,
-    opacity: 1,
-    scale: [0, 1],
-    transition: {
-      duration: 1.2,
-    },
-  },
-  hidden: {
-    x: 200,
-    opacity: 0,
-    scale: 0,
-  },
-};
-
-const boxName = {
-  visible: {
-    x: 0,
-    opacity: 1,
-    scale: [0, 1.5, 1],
-    transition: {
-      duration: 1.2,
-      delay: 1.0,
-    },
-  },
-  hidden: {
-    x: -200,
-    opacity: 0,
-    scale: 0,
-  },
-};
-
-const boxJob = {
-  visible: {
-    y: [-150, -100, -50, 0, -50, 0],
-    opacity: 1,
-    rotate: [0, 1080],
-    scale: [0, 1.5, 1],
-    transition: {
-      duration: 1.2,
-      delay: 2.0,
-    },
-  },
-  hidden: {
-    y: -200,
-    opacity: 0,
-    scale: 0,
-  },
 };
