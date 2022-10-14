@@ -10,12 +10,12 @@ import "swiper/css/pagination";
 /* End of Swiper Import */
 
 export const Testimonials = () => {
+  SwiperCore.use([Autoplay]);
   return (
     <section id="testimonials">
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
-      {SwiperCore.use([Autoplay])}
       <Swiper
         className="container testimonials__container"
         modules={[Pagination]}
