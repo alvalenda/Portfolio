@@ -67,20 +67,33 @@ export const boxName = {
   },
 };
 
-export const boxJob = {
+// export const boxJob = {
+//   visible: {
+//     y: 0,
+//     opacity: 1,
+//     rotate: [0, 1080],
+//     scale: [0, 1],
+//     transition: {
+//       duration: 1.2,
+//       delay: 2.0,
+//     },
+//   },
+//   hidden: {
+//     y: -200,
+//     opacity: 0,
+//     scale: 0,
+//   },
+// };
+
+export const letterAnimation = (i) => ({
   visible: {
-    y: 0,
     opacity: 1,
-    rotate: [0, 1080],
-    scale: [0, 1],
     transition: {
       duration: 1.2,
-      delay: 2.0,
+      delay: 2.0 + i * 0.1,
     },
   },
   hidden: {
-    y: -200,
     opacity: 0,
-    scale: 0,
   },
-};
+});
