@@ -22,7 +22,7 @@ export const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>1+ year Fullstack bootcamp</small>
             </article>
 
             <article className="about__card">
@@ -34,15 +34,15 @@ export const About = () => {
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed Projects</small>
+              <small>30+ Completed Projects</small>
             </article>
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-            cumque dolorum quaerat, sed ad non velit nesciunt tenetur sit, error
-            aliquid illum debitis ex iure laborum sunt suscipit ipsum
-            architecto.
+            I am a Computer Systems Analyst student and passionate about my
+            work. I have a steady source of motivation that drives me to do my
+            best. This passion led me to challenge myself daily and learn new
+            skills that helped me to do a better work.
           </p>
 
           <a href="#contact" className="btn btn-primary">
