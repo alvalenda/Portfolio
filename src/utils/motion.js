@@ -3,7 +3,7 @@ export const boxFromLeft = {
   visible: {
     x: 0,
     opacity: 1,
-    filter: `blur(0px)`,
+    // filter: `blur(0px)`,
     transition: {
       duration: 0.8,
       delay: 0.2,
@@ -11,7 +11,7 @@ export const boxFromLeft = {
   },
   hidden: {
     x: -100,
-    filter: `blur(2px)`,
+    // filter: `blur(2px)`,
     opacity: 0,
   },
 };
@@ -20,7 +20,7 @@ export const boxFromRight = {
   visible: {
     x: 0,
     opacity: 1,
-    filter: `blur(0px)`,
+    // filter: `blur(0px)`,
     transition: {
       duration: 0.8,
       delay: 0.2,
@@ -28,7 +28,7 @@ export const boxFromRight = {
   },
   hidden: {
     x: 100,
-    filter: `blur(2px)`,
+    // filter: `blur(2px)`,
     opacity: 0,
   },
 };
@@ -97,3 +97,20 @@ export const letterAnimation = (i) => ({
     opacity: 0,
   },
 });
+
+////////////////////// GENERAL //////////////////////
+export const boxBottom = {
+  visible: {
+    y: 0,
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.8,
+    },
+  },
+  hidden: {
+    y: 100,
+    opacity: 0,
+    scale: 0,
+  },
+};

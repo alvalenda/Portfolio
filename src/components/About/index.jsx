@@ -3,6 +3,7 @@ import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 import "./About.css";
+import { AboutCard } from "./AboutCard";
 
 export const About = () => {
   return (
@@ -19,23 +20,23 @@ export const About = () => {
 
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
+            <AboutCard
+              title="Experience"
+              subtitle={"1+ year Fullstack experience"}
+            >
               <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>1+ year Fullstack experience</small>
-            </article>
+            </AboutCard>
 
-            <article className="about__card">
+            <AboutCard
+              title="Technologies"
+              subtitle={"Always learning new technologies"}
+            >
               <FiUsers className="about__icon" />
-              <h5>Technologies</h5>
-              <small>Always learning new technologies</small>
-            </article>
+            </AboutCard>
 
-            <article className="about__card">
+            <AboutCard title="Projects" subtitle={"30+ Completed Projects"}>
               <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>30+ Completed Projects</small>
-            </article>
+            </AboutCard>
           </div>
 
           <p>

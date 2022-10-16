@@ -70,6 +70,12 @@
   color: var(--color-light);
 }
 
+article.about__card,
+article.box {
+  min-height: 12rem;
+  height: auto;
+}
+
 /* ================== MEDIUM DEVICES ================= */
 @media screen and (max-width: 1024px) {
   .about__container {
@@ -81,6 +87,7 @@
     width: 50%;
     margin: 2rem auto 4rem;
   }
+
   .about__content {
     text-align: center;
   }
