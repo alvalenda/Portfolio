@@ -22,13 +22,13 @@ export const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1+ year Fullstack bootcamp</small>
+              <small>1+ year Fullstack experience</small>
             </article>
 
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <h5>Technologies</h5>
+              <small>Always learning new technologies</small>
             </article>
 
             <article className="about__card">
