@@ -64,19 +64,34 @@ export const Contact = () => {
         </div>
 
         <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-          />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            rows="7"
-            placeholder="Your Message"
-            required
-          ></textarea>
+          <div className="contact__form-name">
+            <div className="separator separator-name">
+              <input type="text" name="name" placeholder="Name" required />
+              <span className="contact__form-effect"></span>
+            </div>
+
+            <div className="separator separator-email">
+              <input type="email" name="email" placeholder="Email" required />
+              <span className="contact__form-effect"></span>
+            </div>
+          </div>
+
+          <div className="separator separator-subject">
+            <input type="text" name="subject" placeholder="Subject" required />
+            <span className="contact__form-effect"></span>
+          </div>
+
+          <div className="separator separator-message">
+            <textarea
+              name="message"
+              rows="10"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <span className="contact__form-effect"></span>
+          </div>
+
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>

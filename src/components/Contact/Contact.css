@@ -45,7 +45,22 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  position: relative;
+}
+
+.contact__form-name {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  gap: 0.3rem;
+  justify-content: center;
+  max-height: 12.5%;
+}
+
+.separator {
+  width: 100%;
 }
 
 form input,
@@ -57,14 +72,53 @@ form textarea {
   padding: 1.5rem;
   resize: none;
   width: 100%;
+  height: 100%;
 }
 
-form textarea {
-  height: 57%;
+.separator-message {
+  height: 60%;
 }
 
 form button {
   align-self: center;
+}
+
+/* Animation from focus */
+/* .separator::after {
+  content: "";
+  border: 1px solid var(--color-primary);
+  border-radius: 1rem;
+  width: calc(100% - 10px);
+  margin: 0 auto;
+} */
+
+.separator {
+  position: relative;
+}
+
+.contact__form-effect {
+  background: linear-gradient(transparent, var(--color-primary));
+  border-radius: 0.5rem;
+  position: absolute;
+  bottom: calc(0% + 0.5rem);
+  left: calc(0% + 1.25rem);
+  height: 2px;
+  width: calc(100% - 2.5rem);
+  opacity: 0.8;
+  transform: scale(0);
+  transition: all 0.8s cubic-bezier(0.17, -0.2, 0.735, 0.045);
+}
+
+/* .separator-message .contact__form-effect {
+  bottom: calc(0% + 1rem);
+} */
+
+form input:focus + .contact__form-effect {
+  transform: scale(1);
+}
+
+form textarea:focus + .contact__form-effect {
+  transform: scale(1);
 }
 
 /* =================== MEDIA QUERIES ================= */
@@ -75,16 +129,35 @@ form button {
     gap: 2rem;
   }
 
-  form input {
+  .contact__form-name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 25%;
+    max-height: 25%;
+    gap: 3rem;
+    /* flex-basis: 1; */
+    /* margin-bottom: 0; */
+  }
+
+  .separator-subject {
+    height: 9%;
+  }
+
+  .separator-name,
+  .separator-email {
     height: 12.5%;
   }
 
-  form textarea {
-    height: 70%;
+  .separator-name span,
+  .separator-email span {
+    bottom: calc(0% - 1.5rem);
+    left: calc(0% + 1rem);
   }
-  /* form button {
-    margin: 0 auto;
-  } */
+
+  .separator-message {
+    height: 50%;
+  }
 }
 
 /* ================== SMALL DEVICES ================= */
