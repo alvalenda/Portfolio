@@ -115,15 +115,18 @@ export const boxBottom = ({ duration, posY = 100 }) => ({
   },
 });
 
-export const boxShow = ({ duration, posY = 100 }) => ({
+export const boxShow = ({ duration, posY = 0, posX = 0 }) => ({
   visible: {
+    x: 0,
     y: 0,
     opacity: 1,
     transition: {
+      delay: 0.2,
       duration: 0.1 * duration,
     },
   },
   hidden: {
+    x: posX ?? 100,
     y: posY ?? 100,
     opacity: 0,
   },
