@@ -15,6 +15,11 @@
 .portfolio__item:hover {
   background: transparent;
   border-color: var(--color-primary-variant);
+  transform: translateY(-0.2rem);
+}
+
+.portfolio__item:hover #portfolio__item-folder {
+  color: var(--color-primary-variant);
 }
 
 .portfolio__item h3 {
@@ -48,6 +53,7 @@
 #portfolio__item-folder {
   color: var(--color-primary);
   font-size: 2.5rem;
+  transition: var(--transition);
 }
 
 .portfolio__item-cta a,
