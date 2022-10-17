@@ -99,13 +99,13 @@ export const letterAnimation = (i) => ({
 });
 
 ////////////////////// GENERAL //////////////////////
-export const boxBottom = {
+export const boxBottom = ({ duration }) => ({
   visible: {
     y: 0,
     opacity: 1,
     scale: 1,
     transition: {
-      duration: 0.8,
+      duration: 0.1 * duration,
     },
   },
   hidden: {
@@ -113,4 +113,4 @@ export const boxBottom = {
     opacity: 0,
     scale: 0,
   },
-};
+});
