@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { boxBottom } from "@/utils/motion";
+import { boxBottom, letterAnimation } from "@/utils/motion";
 import { BiCheck } from "react-icons/bi";
 
 export const ServicesCard = ({ children, service }) => {
@@ -26,10 +26,16 @@ export const ServicesCard = ({ children, service }) => {
 
       <ul className="service__list">
         {service.items.map((item, index) => (
-          <li key={index}>
+          <motion.li
+            key={index}
+            ref={ref}
+            variants={letterAnimation(index * 5, 1)}
+            initial="hidden"
+            animate={control}
+          >
             <BiCheck className="service__list-icon" />
             <p>{item}</p>
-          </li>
+          </motion.li>
         ))}
       </ul>
     </motion.article>

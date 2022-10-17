@@ -85,12 +85,12 @@ export const boxName = {
 //   },
 // };
 
-export const letterAnimation = (i) => ({
+export const letterAnimation = (i, j = 2.0) => ({
   visible: {
     opacity: 1,
     transition: {
       duration: 1.2,
-      delay: 2.0 + i * 0.1,
+      delay: j + i * 0.1,
     },
   },
   hidden: {
