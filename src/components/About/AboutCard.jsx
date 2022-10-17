@@ -14,7 +14,7 @@ export const AboutCard = ({ children, title, subtitle }) => {
     <motion.article
       className="box"
       ref={ref}
-      variants={boxBottom}
+      variants={boxBottom({ duration: 5 })}
       initial="hidden"
       animate={control}
     >
