@@ -1,7 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import { boxBottom, letterAnimation } from "@/utils/motion";
+import { boxShow, letterAnimation } from "@/utils/motion";
 import { BiCheck } from "react-icons/bi";
 
 export const ServicesCard = ({ children, service }) => {
@@ -16,7 +16,7 @@ export const ServicesCard = ({ children, service }) => {
     <motion.article
       className="service__box service"
       ref={ref}
-      variants={boxBottom({ duration: 5, posY: 0 })}
+      variants={boxShow({ duration: 4, posY: 100 })}
       initial="hidden"
       animate={control}
     >

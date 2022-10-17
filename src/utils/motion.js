@@ -114,3 +114,17 @@ export const boxBottom = ({ duration, posY = 100 }) => ({
     scale: 0,
   },
 });
+
+export const boxShow = ({ duration, posY = 100 }) => ({
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.1 * duration,
+    },
+  },
+  hidden: {
+    y: posY ?? 100,
+    opacity: 0,
+  },
+});
