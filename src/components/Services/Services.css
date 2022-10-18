@@ -51,6 +51,7 @@
 
 .service__list p {
   font-size: 0.9rem;
+  align-self: center;
 }
 
 /* ================== MEDIUM DEVICES ================= */
