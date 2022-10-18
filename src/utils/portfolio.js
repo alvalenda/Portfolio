@@ -16,7 +16,7 @@ export const portfolioData = [
     tech: ["React", "Tailwind", "Javascript"],
   },
   {
-    title: "API Brasileirão v1",
+    title: "Brasileirão API v1",
     description:
       "First version of the Brazilian football league API. It includes the 20 teams and their respective matches and datas.",
     github: "https://github.com/alvalenda/api-brasileirao/tree/mongodb-version",
@@ -62,5 +62,21 @@ export const portfolioData = [
     github: "https://github.com/alvalenda/jogo-de-luta",
     demo: "https://alvalenda-jogo-de-luta.netlify.app/",
     tech: ["Javascript", "canvas", "oop"],
+  },
+  {
+    title: "Portfolio v1",
+    description:
+      "My first portfolio. It was developed with HTML, CSS and Javascript. It was my first contact with animations and transitions.",
+    github: "https://github.com/alvalenda/portfolio/tree/ver_1_vanilla",
+    demo: "https://alvalenda.github.io/portfolio/",
+    tech: ["Javascript", "css", "HTML"],
+  },
+  {
+    title: "Paleta Hipster API",
+    description:
+      "A simple CRUD for a ecommerce of hipster palettes. It was developed with NodeJS and Express. It consumes a MongoDB database.",
+    github: "https://github.com/alvalenda/api-paletahipster",
+    demo: "api-paletahipster.herokuapp.com/paletas/api-docs/",
+    tech: ["Nodejs", "express", "MongoDB"],
   },
 ];
