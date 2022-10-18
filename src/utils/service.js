@@ -1,22 +1,36 @@
 export const servicesData = [
   {
-    title: "Front-end Dev",
-    items: ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"],
+    title: "Front-end",
+    items: [
+      "Professional Web Sites",
+      "Portfolios",
+      "Landing Pages",
+      "e-Commerce",
+      "Accessibility, Usability, Inclusion",
+      "Performance and Stability",
+    ],
   },
   {
-    title: "Back-end Dev",
+    title: "Back-end",
     items: [
-      "Item 1",
-      "Item 2",
-      "Item 3",
-      "Item 4",
-      "Item 5",
-      "Item 6",
-      "Item 7",
+      "API Development",
+      "API Documentation",
+      "Database Design",
+      "Database Management",
+      "User Authentication",
+      "Cloud Services",
+      "Hosting",
     ],
   },
   {
     title: "Web Development",
-    items: ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6"],
+    items: [
+      "Javascript, Typescript projects",
+      "Phyton projects",
+      "Desktop Applications",
+      "OOP",
+      "Scripting",
+      "Web Scraping",
+    ],
   },
 ];
