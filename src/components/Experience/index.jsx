@@ -1,5 +1,6 @@
-import "./Experience.css";
+import { motion } from "framer-motion";
 import { BsPatchCheckFill } from "react-icons/bs";
+import "./Experience.css";
 
 export const Experience = () => {
   return (
@@ -8,7 +9,7 @@ export const Experience = () => {
       <h2>My Experience</h2>
 
       <div className="container experience__container">
-        <div className="experience__frontend">
+        <motion.div className="experience__frontend" whileTap={{ scale: 0.9 }}>
           <h3>Frontend Development</h3>
 
           <div className="experience__content">
@@ -52,11 +53,11 @@ export const Experience = () => {
               </div>
             </article>
           </div>
-        </div>
+        </motion.div>
 
         {/* END OF THE FRONTEND */}
 
-        <div className="experience_backend">
+        <motion.div className="experience_backend" whileTap={{ scale: 0.9 }}>
           <h3>Backtend Development</h3>
 
           <div className="experience__content">
@@ -100,7 +101,7 @@ export const Experience = () => {
               </div>
             </article>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
