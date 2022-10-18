@@ -95,6 +95,25 @@
   padding: 0 1rem;
 }
 
+.container.portfolio__button {
+  display: flex;
+  justify-content: center;
+}
+
+#portfolio a.btn {
+  position: relative;
+  margin-top: 4rem;
+  padding-right: 2.5rem;
+  text-align: center;
+}
+
+#portfolio a.btn svg {
+  position: absolute;
+  font-size: larger;
+  top: calc(50% - 0.6rem);
+  right: calc(0% + 0.8rem);
+}
+
 /* =================== MEDIA QUERIES ================= */
 /* ================== MEDIUM DEVICES ================= */
 @media screen and (max-width: 1024px) {
