@@ -78,7 +78,7 @@ export const boxName = {
     scale: 0,
   },
   hover: {
-    scale: 1.2,
+    scale: 1.08,
     transition: {
       duration: 0.4,
     },
