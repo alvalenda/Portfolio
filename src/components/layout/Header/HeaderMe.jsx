@@ -9,11 +9,7 @@ export const HeaderMe = () => {
   const stack = [..."Fullstack Developer"];
 
   useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
+    inView ? control.start("visible") : control.start("hidden");
   }, [control, inView]);
 
   return (
