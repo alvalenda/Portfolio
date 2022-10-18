@@ -48,6 +48,18 @@ export const boxHello = {
     opacity: 0,
     scale: 0,
   },
+  nameHover: {
+    scale: 1.2,
+    transition: {
+      duration: 0.5,
+    },
+  },
+  nameHoverEnd: {
+    scale: 1,
+    transition: {
+      duration: 0.5,
+    },
+  },
 };
 
 export const boxName = {
@@ -64,6 +76,18 @@ export const boxName = {
     x: 200,
     opacity: 0,
     scale: 0,
+  },
+  hover: {
+    scale: 1.2,
+    transition: {
+      duration: 0.4,
+    },
+  },
+  hoverend: {
+    scale: 1,
+    transition: {
+      duration: 0.4,
+    },
   },
 };
 

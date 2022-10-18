@@ -1,5 +1,6 @@
-import { MdOutlineEmail } from "react-icons/md";
 import { useRef } from "react";
+import { motion } from "framer-motion";
+import { MdOutlineEmail } from "react-icons/md";
 import { FaDiscord, FaWhatsapp } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
@@ -92,9 +93,13 @@ export const Contact = () => {
             <span className="contact__form-effect"></span>
           </div>
 
-          <button type="submit" className="btn btn-primary">
+          <motion.button
+            type="submit"
+            className="btn btn-primary"
+            whileTap={{ scale: 0.8 }}
+          >
             Send Message
-          </button>
+          </motion.button>
         </form>
       </div>
     </section>

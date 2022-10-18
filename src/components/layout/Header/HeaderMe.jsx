@@ -19,7 +19,7 @@ export const HeaderMe = () => {
   return (
     <>
       <motion.div
-        className="box"
+        className="hello__box"
         ref={ref}
         variants={boxHello}
         initial="hidden"
@@ -29,11 +29,13 @@ export const HeaderMe = () => {
       </motion.div>
 
       <motion.div
-        className="box"
+        className="name__box"
         ref={ref}
         variants={boxName}
         initial="hidden"
         animate={control}
+        whileHover={() => control.start("hover")}
+        onHoverEnd={() => control.start("hoverend")}
       >
         <h1>Flávio Alvarenga.</h1>
       </motion.div>
