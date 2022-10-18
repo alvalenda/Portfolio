@@ -39,15 +39,15 @@ export const HeaderMe = () => {
       </motion.div>
 
       <h5 className="header__job-text">
-        {stack.map((letter, i) => (
+        {stack.map((letter, index) => (
           <motion.span
-            key={i}
+            key={index}
             ref={ref}
             initial="hidden"
             animate={control}
-            variants={letterAnimation(i)}
+            variants={letterAnimation(index)}
           >
-            <span key={i}>{letter}</span>
+            <span key={index}>{letter}</span>
           </motion.span>
         ))}
       </h5>
