@@ -88,6 +88,10 @@ header h5 {
     /* height: 100vh; */
   }
 }
+/* 
+@media screen and (max-height: 1500px) {
+
+} */
 
 /* ================== SMALL DEVICES ================= */
 @media screen and (max-width: 600px) {
