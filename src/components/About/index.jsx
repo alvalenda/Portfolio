@@ -43,7 +43,7 @@ export const About = () => {
               <FiUsers className="about__icon" />
             </AboutCard>
 
-            <AboutCard title="Projects" subtitle={"30+ Completed Projects"}>
+            <AboutCard title="Projects" subtitle={"40+ Completed Projects"}>
               <VscFolderLibrary className="about__icon" />
             </AboutCard>
           </div>
