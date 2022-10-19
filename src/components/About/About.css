@@ -68,6 +68,7 @@
 .about__content p {
   color: var(--color-light);
   font-size: larger;
+  font-weight: 300;
   margin: 2rem 0 2.6rem;
 }
 
