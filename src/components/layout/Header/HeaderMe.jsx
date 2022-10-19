@@ -14,15 +14,7 @@ export const HeaderMe = () => {
 
   return (
     <>
-      <motion.div
-        className="hello__box"
-        ref={ref}
-        variants={boxHello}
-        initial="hidden"
-        animate={control}
-      >
-        <h5>Hello, I'm</h5>
-      </motion.div>
+      <h5>Hello, I'm</h5>
 
       <motion.div
         className="name__box"

@@ -69,7 +69,7 @@ export const boxName = {
     scale: [0, 1.5, 1],
     transition: {
       duration: 1.2,
-      delay: 1.0,
+      delay: 0.2,
     },
   },
   hidden: {
