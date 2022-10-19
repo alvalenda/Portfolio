@@ -8,11 +8,11 @@ import "./About.css";
 
 export const About = () => {
   const aboutStrings = [
-    "I don't drink coffee to wake up. I wake up to drink coffee. <3",
+    "I don't drink coffee to wake up. I wake up to drink coffee.",
     "< And I drink coffee to code. />",
-    "Because I'm a developer and I love what I do.",
-    "A Computer Systems Analyst student and Fullstack Developer...",
-    "Click this button and let's talk about your project!",
+    "I am passionate about technology and innovation.",
+    "Computer Systems Analyst student and Fullstack Developer...",
+    "Send me a message and let's talk!",
   ];
 
   return (
