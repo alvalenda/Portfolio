@@ -75,10 +75,13 @@
   font-weight: 300;
 }
 
-article.about__card,
-article.box {
-  min-height: 12rem;
+.about__cards article.box {
   height: auto;
+}
+
+/* 100% grants same size */
+article.about__card {
+  height: 100%;
 }
 
 .Typewriter__cursor {
