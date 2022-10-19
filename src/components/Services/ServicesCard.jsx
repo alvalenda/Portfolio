@@ -32,6 +32,7 @@ export const ServicesCard = ({ children, service }) => {
             variants={letterAnimation(index * 5, 1)}
             initial="hidden"
             animate={control}
+            exitBeforeEnter
           >
             <BiCheck className="service__list-icon" />
             <p>{item}</p>

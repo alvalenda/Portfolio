@@ -25,6 +25,8 @@ export const About = () => {
             <AboutCard
               title="Experience"
               subtitle={"1+ year Fullstack experience"}
+              duration={12}
+              posX={-200}
             >
               <FaAward className="about__icon" />
             </AboutCard>
@@ -32,11 +34,18 @@ export const About = () => {
             <AboutCard
               title="Technologies"
               subtitle={"Always learning new technologies"}
+              duration={12}
+              posX={-450}
             >
               <FiUsers className="about__icon" />
             </AboutCard>
 
-            <AboutCard title="Projects" subtitle={"40+ Completed Projects"}>
+            <AboutCard
+              title="Projects"
+              subtitle={"40+ Completed Projects"}
+              duration={12}
+              posX={window.innerWidth > 600 ? -650 : -200}
+            >
               <VscFolderLibrary className="about__icon" />
             </AboutCard>
           </div>

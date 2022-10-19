@@ -24,6 +24,7 @@ export const HeaderMe = () => {
         animate={control}
         whileHover={() => control.start("hover")}
         onHoverEnd={() => control.start("hoverend")}
+        exitBeforeEnter
       >
         <h1>Flávio Alvarenga.</h1>
       </motion.div>
@@ -35,6 +36,7 @@ export const HeaderMe = () => {
             ref={ref}
             initial="hidden"
             animate={control}
+            exitBeforeEnter
             variants={letterAnimation(index)}
           >
             <span key={index}>{letter}</span>

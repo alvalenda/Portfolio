@@ -11,10 +11,8 @@ export const ProjectCard = ({ project, number }) => {
   const [ref, inView] = useInView();
 
   useEffect(() => {
-    // every time animation
     inView ? control.start("visible") : control.start("hidden");
 
-    // one time animation
     // inView && control.start("visible");
   }, [control, inView]);
 
@@ -25,27 +23,18 @@ export const ProjectCard = ({ project, number }) => {
       variants={number % 2 === 0 ? boxFromLeft : boxFromRight}
       initial="hidden"
       animate={control}
+      exitBeforeEnter
     >
       <article className="portfolio__item">
         <div className="portfolio__item-cta">
           <AiOutlineFolder id="portfolio__item-folder" />
 
           <div>
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              // className="btn"
-            >
+            <a href={project.github} target="_blank" rel="noopener noreferrer">
               <FiGithub />
             </a>
 
-            <a
-              href={project.demo}
-              target="_blank"
-              rel="noopener noreferrer"
-              // className="btn btn-primary"
-            >
+            <a href={project.demo} target="_blank" rel="noopener noreferrer">
               <HiOutlineExternalLink />
             </a>
           </div>

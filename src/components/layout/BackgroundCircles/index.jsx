@@ -14,6 +14,7 @@ export const BackgroundCircles = () => {
         delay: 5,
         duration: 2.5,
       }}
+      exitBeforeEnter
       className="bgcircle bgcircle__container"
     >
       <div className="bgcircle bgcircle__1" />
