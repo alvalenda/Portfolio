@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import ME2 from "@assets/me2.png";
 import "./BackgroundCircles.css";
 
 export const BackgroundCircles = () => {
