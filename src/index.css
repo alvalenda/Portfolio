@@ -41,6 +41,10 @@ a {
 
 html {
   scroll-behavior: smooth;
+
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
 }
 
 ::-webkit-scrollbar {
