@@ -4,17 +4,10 @@ import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 import Typewriter from "typewriter-effect";
 import { AboutCard } from "./AboutCard";
+import { aboutStrings } from "@/utils/about";
 import "./About.css";
 
 export const About = () => {
-  const aboutStrings = [
-    "I don't drink coffee to wake up. I wake up to drink coffee.",
-    "< And I drink coffee to code. />",
-    "I am passionate about technology and innovation.",
-    "Computer Systems Analyst student and Fullstack Developer...",
-    "Send me a message and let's talk!",
-  ];
-
   return (
     <section id="about">
       <h5>Get To Know</h5>
@@ -59,10 +52,6 @@ export const About = () => {
                 pauseFor: 5000,
               }}
             />
-            {/* I am a Computer Systems Analyst student and passionate about my
-            work. I have a steady source of motivation that drives me to do my
-            best. This passion led me to challenge myself daily and learn new
-            skills that helped me to do a better work. */}
           </p>
 
           <a href="#contact" className="btn btn-primary">
