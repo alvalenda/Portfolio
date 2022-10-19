@@ -66,8 +66,9 @@
 }
 
 .about__content p {
-  margin: 2rem 0 2.6rem;
   color: var(--color-light);
+  font-size: larger;
+  margin: 2rem 0 2.6rem;
 }
 
 article.about__card,
@@ -76,6 +77,10 @@ article.box {
   height: auto;
 }
 
+.Typewriter__cursor {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+}
 /* ================== MEDIUM DEVICES ================= */
 @media screen and (max-width: 1024px) {
   .about__container {

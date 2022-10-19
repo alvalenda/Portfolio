@@ -2,10 +2,19 @@ import aboutMe from "@assets/me-about.jpg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
-import "./About.css";
+import Typewriter from "typewriter-effect";
 import { AboutCard } from "./AboutCard";
+import "./About.css";
 
 export const About = () => {
+  const aboutStrings = [
+    "I don't drink coffee to wake up. I wake up to drink coffee. <3",
+    "< And I drink coffee to code. />",
+    "Because I'm a developer and I love what I do.",
+    "A Computer Systems Analyst student and Fullstack Developer...",
+    "Click this button and let's talk about your project!",
+  ];
+
   return (
     <section id="about">
       <h5>Get To Know</h5>
@@ -40,10 +49,20 @@ export const About = () => {
           </div>
 
           <p>
-            I am a Computer Systems Analyst student and passionate about my
+            <Typewriter
+              options={{
+                strings: aboutStrings,
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 20,
+                delay: 50,
+                pauseFor: 5000,
+              }}
+            />
+            {/* I am a Computer Systems Analyst student and passionate about my
             work. I have a steady source of motivation that drives me to do my
             best. This passion led me to challenge myself daily and learn new
-            skills that helped me to do a better work.
+            skills that helped me to do a better work. */}
           </p>
 
           <a href="#contact" className="btn btn-primary">
