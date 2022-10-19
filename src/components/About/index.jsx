@@ -41,18 +41,16 @@ export const About = () => {
             </AboutCard>
           </div>
 
-          <p>
-            <Typewriter
-              options={{
-                strings: aboutStrings,
-                autoStart: true,
-                loop: true,
-                deleteSpeed: 20,
-                delay: 50,
-                pauseFor: 5000,
-              }}
-            />
-          </p>
+          <Typewriter
+            options={{
+              strings: aboutStrings,
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 20,
+              delay: 50,
+              pauseFor: 5000,
+            }}
+          />
 
           <a href="#contact" className="btn btn-primary">
             Let's Talk

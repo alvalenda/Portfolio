@@ -65,11 +65,14 @@
   color: var(--color-light);
 }
 
-.about__content p {
+.about__content div.Typewriter {
+  margin: 2rem 0 2.6rem;
+}
+
+.about__content span {
   color: var(--color-light);
   font-size: larger;
   font-weight: 300;
-  margin: 2rem 0 2.6rem;
 }
 
 article.about__card,
