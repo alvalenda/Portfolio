@@ -1,7 +1,8 @@
 export const aboutStrings = [
-  "I don't drink coffee to wake up. I wake up to drink coffee.",
+  "I don't drink coffee to wake up.",
+  " I wake up to drink coffee.",
   "< And I drink coffee to code. />",
-  "I am passionate about technology and innovation.",
-  "Computer Systems Analyst student and Fullstack Developer...",
-  "Send me a message and let's talk!",
+  "Tech geek, fantasy lover, and a passionate developer.",
+  "Computer Systems Analyst | Fullstack Developer",
+  "Let's talk about your project!",
 ];

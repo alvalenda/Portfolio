@@ -57,7 +57,7 @@ export const About = () => {
               loop: true,
               deleteSpeed: 20,
               delay: 50,
-              pauseFor: 5000,
+              pauseFor: 4000,
             }}
           />
 
