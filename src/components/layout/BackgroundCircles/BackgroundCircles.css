@@ -11,6 +11,12 @@
   --circle-margin-top: 3rem;
 }
 
+.bgcircle.bgcircle__container-motion {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .bgcircle.bgcircle__1 {
   position: absolute;
   border: solid 1px var(--color-primary);
@@ -83,6 +89,24 @@
   50% {
     opacity: 0.5;
   }
+}
+/* ===================== ME ====================== */
+.me {
+  position: absolute;
+  top: calc(35% - 2.5rem);
+  left: calc(50% - 6rem);
+  border-radius: 50%;
+  background: linear-gradient(
+    var(--color-primary),
+    var(--color-primary-variant)
+  );
+  opacity: 1;
+  outline: 4px solid var(--color-light);
+  outline-offset: -4px;
+  overflow: hidden;
+  padding: 0 1rem 0 1rem;
+  height: 12rem;
+  width: 12rem;
 }
 
 /* ===================== MEDIA ===================== */

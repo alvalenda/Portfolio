@@ -14,13 +14,11 @@ export const Header = () => {
         <CTA />
         <HeaderSocials />
 
-        <BackgroundCircles />
-        {/* <div className="me">
-          <img src={ME} alt="picture of me" />
-        </div> */}
-        <div className="me">
-          <img src={ME} alt="picture of me" />
-        </div>
+        <BackgroundCircles>
+          <div className="me">
+            <img src={ME} alt="picture of me" />
+          </div>
+        </BackgroundCircles>
         <a href="#contact" className="scroll__down">
           Scroll Down
         </a>
