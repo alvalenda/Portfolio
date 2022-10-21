@@ -118,8 +118,8 @@
 /* ================== MEDIUM DEVICES ================= */
 @media screen and (max-width: 1024px) {
   .portfolio__container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.2rem;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
   }
 }
 
@@ -128,5 +128,28 @@
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;
+    align-content: center;
+  }
+
+  .portfolio__item {
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .portfolio__item span {
+    font-size: 0.95rem;
+    padding: 0 0.8rem;
+  }
+
+  .portfolio__item:hover {
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    transform: translateY(-0.5rem);
+  }
+}
+/* ================== SMALLER DEVICES ================= */
+@media screen and (max-width: 400px) {
+  .portfolio__item {
+    width: 21rem;
   }
 }
