@@ -68,10 +68,6 @@
   color: var(--color-light);
 }
 
-.about__content div.Typewriter {
-  margin: 2rem 0 2.6rem;
-}
-
 .about__content span {
   color: var(--color-light);
   font-size: larger;
@@ -85,6 +81,11 @@
 /* 100% grants same size */
 article.about__card {
   height: 100%;
+}
+
+.about__typewriter {
+  margin: 2rem 0 2.6rem;
+  min-height: 2.2rem;
 }
 
 span.Typewriter__cursor {

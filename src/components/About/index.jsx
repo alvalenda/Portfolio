@@ -1,13 +1,17 @@
-import aboutMe from "@assets/me-about.png";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+import { AboutCard } from "./AboutCard";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
-import Typewriter from "typewriter-effect";
-import { AboutCard } from "./AboutCard";
 import { aboutStrings } from "@/utils/about";
+import aboutMe from "@assets/me-about.png";
+import Typewriter from "typewriter-effect";
 import "./About.css";
 
 export const About = () => {
+  const [ref, inView] = useInView();
+
   return (
     <section id="about">
       <h5>Get To Know</h5>
@@ -50,16 +54,22 @@ export const About = () => {
             </AboutCard>
           </div>
 
-          <Typewriter
-            options={{
-              strings: aboutStrings,
-              autoStart: true,
-              loop: true,
-              deleteSpeed: 20,
-              delay: 50,
-              pauseFor: 4000,
-            }}
-          />
+          <div ref={ref} className="about__typewriter">
+            {inView && (
+              <Typewriter
+                id="typewriter"
+                options={{
+                  performant: true,
+                  strings: aboutStrings,
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 20,
+                  delay: 50,
+                  pauseFor: 4000,
+                }}
+              />
+            )}
+          </div>
 
           <a href="#contact" className="btn btn-primary">
             Let's Talk
