@@ -32,15 +32,9 @@ nav a.active {
 /* ================== MEDIA QUERY ================= */
 
 /* ================== SMALL DEVICES ================= */
-/* @media screen and (max-width: 600px) {
-  nav {
-    transform: translateX(-69%);
-  }
-} */
-
-/* ================== VERY SMALL DEVICES ================= */
-@media screen and (max-width: 450px) {
+/* if need to correct nav position on small devices, add this media query: */
+/* @media screen and (max-width: 450px) {
   nav {
     transform: translateX(-50%);
   }
-}
+} */
