@@ -10,10 +10,9 @@ export const BackgroundCircles = ({ children }) => {
           scaleX: [1, 2, 1, 1.5, 1, 1.25, 1, 1.15, 1, 1.05, 1],
           scaleY: [2, 1, 2, 1, 1.5, 1, 1.25, 1, 1.15, 1, 1.05, 1],
           opacity: [0, 0.1, 0.2, 0.3, 0.4, 0.3, 0.5, 0.65, 0.65, 0.3],
-          // borderRadius: ["20%", "20%", "50%", "80%", "20%"],
         }}
         transition={{
-          delay: 1,
+          delay: 5,
           duration: 5,
         }}
         exitBeforeEnter
