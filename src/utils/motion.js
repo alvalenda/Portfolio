@@ -78,13 +78,15 @@ export const boxName = {
     scale: 0,
   },
   hover: {
-    scale: 1.08,
+    scaleX: [1, 1.1, 0.9, 1.1, 1],
     transition: {
-      duration: 0.4,
+      ease: "easeInOut",
+      duration: 4,
+      repeat: Infinity,
     },
   },
   hoverend: {
-    scale: 1,
+    scaleX: 1,
     transition: {
       duration: 0.4,
     },
