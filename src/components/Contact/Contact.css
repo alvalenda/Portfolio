@@ -112,6 +112,22 @@ form textarea:focus + .contact__form-effect {
   transform: scale(1);
 }
 
+form .contact__message-sent {
+  position: absolute;
+  bottom: calc(0% - 6rem);
+  align-self: center;
+  border-radius: 1rem;
+  background: var(--color-primary);
+  color: var(--color-bg);
+  font-weight: 300;
+  padding: 0.1rem 0.7rem;
+  cursor: default;
+}
+
+form .contact__message-sent svg {
+  transform: translateY(0.15rem);
+}
+
 /* =================== MEDIA QUERIES ================= */
 /* ================== MEDIUM DEVICES ================= */
 @media screen and (max-width: 1024px) {
@@ -149,6 +165,10 @@ form textarea:focus + .contact__form-effect {
 
   .separator-message {
     min-height: 45%;
+  }
+
+  form .contact__message-sent {
+    bottom: calc(0% - 4.5rem);
   }
 }
 

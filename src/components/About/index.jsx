@@ -57,7 +57,6 @@ export const About = () => {
           <div ref={ref} className="about__typewriter">
             {inView && (
               <Typewriter
-                id="typewriter"
                 options={{
                   performant: true,
                   strings: aboutStrings,

@@ -1,14 +1,24 @@
 import { useRef } from "react";
-import { motion } from "framer-motion";
-import { MdOutlineEmail } from "react-icons/md";
+import { motion, useAnimation } from "framer-motion";
+import { MdOutlineEmail, MdOutlineCheck } from "react-icons/md";
 import { FaDiscord, FaWhatsapp } from "react-icons/fa";
+import { boxShow } from "@/utils/motion";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 export const Contact = () => {
   const form = useRef();
+  const control = useAnimation();
   const zapMsg =
     "Hello! I'm sending this message directly from your React Portfolio.";
+
+  const messageSent = () => {
+    control.start("visible");
+
+    setTimeout(() => {
+      control.start("hidden");
+    }, 4000);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,6 +30,7 @@ export const Contact = () => {
       "YPyYemRQFB0bXMSAA"
     );
 
+    messageSent();
     e.target.reset();
   };
 
@@ -100,6 +111,16 @@ export const Contact = () => {
           >
             Send Message
           </motion.button>
+
+          <motion.span
+            className="contact__message-sent"
+            variants={boxShow({ duration: 4, scaleY: 0, opacity: 1 })}
+            initial="hidden"
+            animate={control}
+            exitBeforeEnter
+          >
+            Your message has been sent <MdOutlineCheck />
+          </motion.span>
         </form>
       </div>
     </section>
