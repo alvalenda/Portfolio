@@ -87,3 +87,11 @@ header h5 {
     display: none;
   }
 }
+
+/* ================== VERY SMALL DEVICES ================= */
+@media screen and (max-width: 400px) {
+  header h1 {
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+  }
+}
