@@ -18,7 +18,7 @@ export const ProjectCard = ({ project, number }) => {
 
   return (
     <motion.div
-      className="box"
+      className="portfolio__item-box"
       ref={ref}
       variants={number % 2 === 0 ? boxFromLeft : boxFromRight}
       initial="hidden"
