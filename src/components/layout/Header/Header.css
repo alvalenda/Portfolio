@@ -15,6 +15,11 @@ header h5 {
   font-size: 1.1rem;
   font-weight: 300;
   margin-right: 17rem;
+  cursor: default;
+}
+
+header h1 {
+  cursor: default;
 }
 
 .header__job-text {
