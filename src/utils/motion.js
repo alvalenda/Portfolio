@@ -145,7 +145,7 @@ export const boxShow = ({
   posX = 0,
   scaleX = 1,
   scaleY = 1,
-  opacity = 1,
+  opacity = 0,
 }) => ({
   visible: {
     x: 0,
@@ -161,7 +161,7 @@ export const boxShow = ({
   hidden: {
     x: posX ?? 100,
     y: posY ?? 100,
-    opacity: [1, opacity, 0],
+    opacity: [opacity, opacity, 0],
     scaleX: scaleX ?? 1,
     scaleY: scaleY ?? 1,
     transition: {
