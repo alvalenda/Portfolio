@@ -3,10 +3,10 @@
   display: flex;
   justify-items: center;
   align-items: center;
-  height: 100vh;
+  height: 75vh;
   width: 100%;
   overflow: hidden;
-  z-index: 1;
+  z-index: -1;
 
   --circle-margin-top: 3rem;
 }
@@ -93,7 +93,7 @@
 /* ===================== ME ====================== */
 .me {
   position: absolute;
-  top: calc(35% - 2.5rem);
+  top: calc(35% - 6rem);
   left: calc(50% - 6rem);
   border-radius: 50%;
   background: linear-gradient(
@@ -110,7 +110,19 @@
 }
 
 /* ===================== MEDIA ===================== */
-@media screen and (max-height: 1500px) {
+/* ================== MEDIUM DEVICES ================= */
+@media screen and (max-height: 1300px) {
+  .bgcircle.bgcircle__container {
+    margin-top: var(--circle-margin-top);
+  }
+
+  /* .me {
+    margin-top: -3.5rem;
+  } */
+}
+
+/* ================== SMALL DEVICES ================= */
+@media screen and (max-height: 1000px) {
   .bgcircle.bgcircle__container {
     margin-top: var(--circle-margin-top);
   }
@@ -119,7 +131,8 @@
   .bgcircle.bgcircle__2,
   .bgcircle.bgcircle__3,
   .bgcircle.bgcircle__4,
-  .bgcircle.bgcircle__5 {
-    margin-top: 3.5rem;
+  .bgcircle.bgcircle__5,
+  .me {
+    margin-top: 5rem;
   }
 }
