@@ -25,26 +25,34 @@ export const Footer = () => {
         <li>
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#testimonials">Testimonials</a>
-        </li>
+        </li> */}
         <li>
           <a href="#contact">Contact</a>
         </li>
       </ul>
 
       <div className="footer__socials">
-        <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.facebook.com/alvarenga.flavio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaFacebookF />
         </a>
         <a
-          href="http://instagram.com"
+          href="https://www.instagram.com/flavioalva/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaInstagram />
         </a>
-        <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://twitter.com/banysan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaTwitter />
         </a>
       </div>

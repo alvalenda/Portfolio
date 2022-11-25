@@ -28,7 +28,7 @@ export const About = () => {
           <div className="about__cards">
             <AboutCard
               title="Experience"
-              subtitle={"1+ year Fullstack experience"}
+              subtitle={"Full Stack Technology Student"}
               duration={12}
               posX={window.innerWidth > 600 ? -200 : -100}
             >
@@ -46,7 +46,7 @@ export const About = () => {
 
             <AboutCard
               title="Projects"
-              subtitle={"40+ Completed Projects"}
+              subtitle={"Check my Github to see my projects"}
               duration={12}
               posX={window.innerWidth > 600 ? -650 : -100}
             >
