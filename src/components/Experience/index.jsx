@@ -58,7 +58,7 @@ export const Experience = () => {
         {/* END OF THE FRONTEND */}
 
         <motion.div className="experience_backend" whileTap={{ scale: 0.9 }}>
-          <h3>Backtend Development</h3>
+          <h3>Backend Development</h3>
 
           <div className="experience__content">
             <article className="experience__details">
