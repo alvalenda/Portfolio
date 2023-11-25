@@ -3,8 +3,8 @@ export const portfolioData = [
     title: "Todo NextJS 14",
     description:
       "A app developed with NextJS 14, NextAuth and PostgreSQL. It has a login system and a CRUD for the tasks.",
-    github: "https://github.com/alvarengaflavio/front-todolist",
-    demo: "https://alvalenda-todo.netlify.app/",
+    github: "https://github.com/alvarengaflavio/todo-next",
+    demo: "https://todo-next-alvalenda.vercel.app/",
     tech: ["Next 14", "TypeScript", "Tailwind"],
   },
   {
@@ -27,7 +27,7 @@ export const portfolioData = [
   {
     title: "Rick and Morty API",
     description:
-      "A CRUD for Rick and Morty characters, with a login system and cryptographed password. JWT and Swagger applied.",
+      "A CRUD for Rick and Morty characters, with a login system and encrypted password. JWT and Swagger applied.",
     github: "https://github.com/alvarengaflavio/api-rickandmorty",
     demo: "https://alva-rickandmorty.herokuapp.com/api-docs/",
     tech: ["Nodejs", "Express", "MongoDB"],
@@ -75,7 +75,7 @@ export const portfolioData = [
   {
     title: "Paleta Hipster API",
     description:
-      "A simple CRUD for a ecommerce of hipster palettes. It was developed with NodeJS and Express. It consumes a MongoDB database.",
+      "A simple CRUD for a e-commerce of hipster palettes. It was developed with NodeJS and Express. It consumes a MongoDB database.",
     github: "https://github.com/alvarengaflavio/api-paletahipster",
     demo: "api-paletahipster.herokuapp.com/paletas/api-docs/",
     tech: ["Nodejs", "express", "MongoDB"],
