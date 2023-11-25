@@ -1,11 +1,11 @@
 export const portfolioData = [
   {
-    title: "To-Do List App",
+    title: "Todo NextJS 14",
     description:
-      "A simple to-do list applying Optimistic UI pattern. v1 consuming a backend and v2 storing in localStorage.",
+      "A app developed with NextJS 14, NextAuth and PostgreSQL. It has a login system and a CRUD for the tasks.",
     github: "https://github.com/alvarengaflavio/front-todolist",
     demo: "https://alvalenda-todo.netlify.app/",
-    tech: ["React", "Javascript", "css"],
+    tech: ["Next 14", "TypeScript", "Tailwind"],
   },
   {
     title: "Github Finder",
