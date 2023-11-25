@@ -17,7 +17,7 @@ export const Portfolio = () => {
 
       <div className="container portfolio__button">
         <a
-          href="https://github.com/alvalenda"
+          href="https://github.com/alvarengaflavio"
           target="_blank"
           rel="noopener noreferrer"
           className="btn"
