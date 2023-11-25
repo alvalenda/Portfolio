@@ -49,7 +49,7 @@ export const Footer = () => {
           <FaInstagram />
         </a>
         <a
-          href="https://twitter.com/banysan"
+          href="https://twitter.com/import_flavio"
           target="_blank"
           rel="noopener noreferrer"
         >
